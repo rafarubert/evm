@@ -1,0 +1,413 @@
+/!\ FAILSAFE /!\  Mon Nov 16 10:21:56 -0300 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/opt/local/var/run/mysql5/mysqld.sock' (2)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (40.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (168.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (212.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAgentes (20091113144005)
+  [4;35;1mSQL (117.2ms)[0m   [0mCREATE TABLE `agentes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091113144005')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mSHOW FIELDS FROM `agentes`[0m
+  [4;35;1mSQL (43.1ms)[0m   [0mdescribe `agentes`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `agentes`[0m
+/!\ FAILSAFE /!\  Mon Nov 16 16:26:06 -0300 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/opt/local/var/run/mysql5/mysqld.sock' (2)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Nov 16 16:26:07 -0300 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/opt/local/var/run/mysql5/mysqld.sock' (2)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Nov 16 16:26:07 -0300 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/opt/local/var/run/mysql5/mysqld.sock' (2)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Nov 16 16:26:08 -0300 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/opt/local/var/run/mysql5/mysqld.sock' (2)
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /opt/local/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 16:26:15) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AgentesController#index (for 127.0.0.1 at 2009-11-16 16:26:18) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 16:26:21) [GET]
+
+ActionController::RoutingError (No route matches "/agente" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#agente (for 127.0.0.1 at 2009-11-16 16:26:24) [GET]
+
+ActionController::UnknownAction (No action responded to agente. Actions: ):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AgentesController#index (for 127.0.0.1 at 2009-11-16 16:26:26) [GET]
+  [4;36;1mAgente Load (0.4ms)[0m   [0;1mSELECT * FROM `agentes` [0m
+Rendering admin/agentes/index
+
+ActionView::TemplateError (undefined local variable or method `new_agente_path' for #<ActionView::Base:0x19eda08>) on line #20 of app/views/admin/agentes/index.html.erb:
+17: 
+18: <br />
+19: 
+20: <%= link_to 'New agente', new_agente_path %>
+
+    app/views/admin/agentes/index.html.erb:20
+    app/controllers/admin/agentes_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AgentesController#index (for 127.0.0.1 at 2009-11-16 16:36:16) [GET]
+  [4;35;1mAgente Load (0.3ms)[0m   [0mSELECT * FROM `agentes` [0m
+Rendering admin/agentes/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/admin/agentes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AgentesController#index (for 127.0.0.1 at 2009-11-16 16:36:27) [GET]
+  [4;36;1mAgente Load (0.3ms)[0m   [0;1mSELECT * FROM `agentes` [0m
+Rendering admin/agentes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/admin/agentes]

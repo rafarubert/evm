@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  inicio: 2009-11-17
+  termino: 2009-11-17
+  regulamento: MyText
+  pontos_venda: 1
+  pontos_vendedor: 1
+
+two:
+  nome: MyString
+  inicio: 2009-11-17
+  termino: 2009-11-17
+  regulamento: MyText
+  pontos_venda: 1
+  pontos_vendedor: 1

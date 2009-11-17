@@ -1,0 +1,19 @@
+<h1>Listing agentes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+  </tr>
+
+<% @agentes.each do |agente| %>
+  <tr>
+    <td><%=h agente.nome %></td>
+    <td><%= link_to 'Show', [:admin, agente] %></td>
+    <td><%= link_to 'Edit', edit_admin_agente_path(agente) %></td>
+    <td><%= link_to 'Destroy', [:admin, agente], :confirm => 'Deseja deletar?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

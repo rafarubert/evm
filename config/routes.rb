@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :vendedores
+
+  map.resources :campanhas_agentes
+
   map.namespace :admin do |admin|
     admin.resources :agentes
   end

@@ -1,6 +1,4 @@
 class Admin::AgentesController < ApplicationController
-  # GET /agentes
-  # GET /agentes.xml
   def index
     @agentes = Agente.all
 
@@ -10,8 +8,6 @@ class Admin::AgentesController < ApplicationController
     end
   end
 
-  # GET /agentes/1
-  # GET /agentes/1.xml
   def show
     @agente = Agente.find(params[:id])
 
@@ -21,8 +17,6 @@ class Admin::AgentesController < ApplicationController
     end
   end
 
-  # GET /agentes/new
-  # GET /agentes/new.xml
   def new
     @agente = Agente.new
 
@@ -32,13 +26,10 @@ class Admin::AgentesController < ApplicationController
     end
   end
 
-  # GET /agentes/1/edit
   def edit
     @agente = Agente.find(params[:id])
   end
 
-  # POST /agentes
-  # POST /agentes.xml
   def create
     @agente = Agente.new(params[:agente])
 
@@ -54,8 +45,6 @@ class Admin::AgentesController < ApplicationController
     end
   end
 
-  # PUT /agentes/1
-  # PUT /agentes/1.xml
   def update
     @agente = Agente.find(params[:id])
 
@@ -71,8 +60,6 @@ class Admin::AgentesController < ApplicationController
     end
   end
 
-  # DELETE /agentes/1
-  # DELETE /agentes/1.xml
   def destroy
     @agente = Agente.find(params[:id])
     @agente.destroy
