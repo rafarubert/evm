@@ -9,11 +9,11 @@
   <tr>
     <td><%=h agente.nome %></td>
     <td><%= link_to 'Show', [:admin, agente] %></td>
-    <td><%= link_to 'Edit', edit_admin_agente_path(agente) %></td>
+    <td><%= link_to 'Edit', '/admin/agentes/'#{agente} %></td>
     <td><%= link_to 'Destroy', [:admin, agente], :confirm => 'Deseja deletar?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
+<%= render :partial => "form"%>
 <br />
 

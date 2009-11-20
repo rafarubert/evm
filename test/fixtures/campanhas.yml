@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  titulo: MyString
+  data_inicio: 2009-11-20
+  data_fim: 2009-11-20
+  data_troca: 2009-11-20
+  regulamento: MyText
+  lance_unico: 1
+  quiz: 1
+  temporaria: 1
+
+two:
+  titulo: MyString
+  data_inicio: 2009-11-20
+  data_fim: 2009-11-20
+  data_troca: 2009-11-20
+  regulamento: MyText
+  lance_unico: 1
+  quiz: 1
+  temporaria: 1

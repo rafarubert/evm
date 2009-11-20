@@ -1,12 +1,12 @@
 *{	font-family:Arial, Helvetica, sans-serif;}
 
-body {margin:0px; background:#fff url(../../admin/images/fundo.png) top left repeat-x;}
+body {margin:0px; background:#fff url(../../images/fundo.png) top left repeat-x;}
 
 form {margin:0px; padding:0px;}
 
 img {border:0px; behavior: url("pngbehavior.htc");}
 
-button {background:url(../../admin/images/fundo_botao.png) center center; border:1px solid #ccc}
+button {background:url(../../images/fundo_botao.png) center center; border:1px solid #ccc}
 
 .campo {border: 1px solid #ccc}
 
@@ -16,9 +16,9 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 
 #loginBox {margin:15px auto 0px auto; width:200px; padding:5px; border:1px solid #ccc;}
 	
-	#loginBox #titulo {margin:0px 0px 5px 0px; background:url(../../admin/images/fundo_titulo.png) center center;padding:5px; font-size:12px; font-weight:bold; color:#fff; text-align:center;}
+	#loginBox #titulo {margin:0px 0px 5px 0px; background:url(../../images/fundo_titulo.png) center center;padding:5px; font-size:12px; font-weight:bold; color:#fff; text-align:center;}
 
-	#loginBox #conteudo {background:#fff url(../../admin/images/fundo_corpo.png) top; padding:5px;}
+	#loginBox #conteudo {background:#fff url(../../images/fundo_corpo.png) top; padding:5px;}
 		#loginBox #conteudo * {font-size:11px;}
 		#loginBox #conteudo table {border-collapse:collapse;}
 		#loginBox #conteudo td {padding:5px;}
@@ -38,10 +38,10 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 	
 	#corpo #menu {width:195px; border:1px solid #ccc; padding:1px; background:#fff; float:left}
 		
-		#corpo #menu .titulo {margin:0px 0px 5px 0px; background:url(../../admin/images/fundo_titulo.png) center center;padding:3px 5px 3px 5px; font-size:12px; font-weight:bold; color:#fff;}
+		#corpo #menu .titulo {margin:0px 0px 5px 0px; background:url(../../images/fundo_titulo.png) center center;padding:3px 5px 3px 5px; font-size:12px; font-weight:bold; color:#fff;}
 		
 		#corpo #menu a {display:block; padding:3px; text-decoration:none;font-size:11px; color:#666; border:1px solid #fff; margin:2px;}
-		#corpo #menu a:hover {display:block; padding:3px; text-decoration:none; font-size:11px; color:#000; background:url(../../admin/images/fundo_botao.png) center center;border:1px solid #ccc}
+		#corpo #menu a:hover {display:block; padding:3px; text-decoration:none; font-size:11px; color:#000; background:url(../../images/fundo_botao.png) center center;border:1px solid #ccc}
 
 		#corpo .hr {border:0px; border-top:1px dotted #666; margin:8px 3px 3px 8px;padding:3px}
 
@@ -49,7 +49,7 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 
 	#corpo #centro { width:770px; float:right;border:1px solid #ccc; padding:1px; background:#fff;}
 			
-			#corpo #centro .titulo {margin:0px 0px 5px 0px; background:url(../../admin/images/fundo_titulo_centro.png) center center;padding:3px 5px 3px 5px; font-size:12px; font-weight:bold; color:#fff;}
+			#corpo #centro .titulo {margin:0px 0px 5px 0px; background:url(../../images/fundo_titulo_centro.png) center center;padding:3px 5px 3px 5px; font-size:12px; font-weight:bold; color:#fff;}
 
 				#corpo #centro .titulo img {vertical-align:middle;width:16px; height:16px;}
 
@@ -64,10 +64,10 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 	#formulario legend{color:#0066CC; font-weight:bold; font-size:14px; padding:10px}
 	#formulario table{border:none}
 	#formulario td{border:none; background-color:#e9e9e9; padding-left:5px}
-	#formulario th{border:none; background:url(../../admin/images/fundo_titulo_lista.png) center center;color:#fff}
+	#formulario th{border:none; background:url(../../images/fundo_titulo_lista.png) center center;color:#fff}
 	
 	#formulario #addProdutoEnd {padding:0px; border:1px solid #ccc; width:320px; margin-left:100px;}
-		#formulario #addProdutoEnd h6 {padding:3px; margin:1px; font-size: 11px; background:url(../../admin/images/fundo_titulo_lista.png) center center;color:#fff}
+		#formulario #addProdutoEnd h6 {padding:3px; margin:1px; font-size: 11px; background:url(../../images/fundo_titulo_lista.png) center center;color:#fff}
 		#formulario #addProdutoEnd li {padding:3px;display:table-cell; float:left; width:180px;}
 		#formulario #addProdutoEnd select {width:50px;}
 
@@ -80,7 +80,7 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 	#listagem button {margin:0px 5px 0px 0px;}
 	#listagem table { border-collapse:collapse; border: 1px solid #ccc; margin:0px 0px 5px 0px; width:100%}
 	#listagem td {padding:3px;}
-	#listagem thead td {background:url(../../admin/images/fundo_titulo_lista.png) center center; color:white; font-weight:bold}	
+	#listagem thead td {background:url(../../images/fundo_titulo_lista.png) center center; color:white; font-weight:bold}	
 	#listagem tbody td {border-top:1px dashed #ccc}
 	#listagem tbody tr:hover { background:#ffffcc}
 	#listagem tbody tr:active { background:#ffffcc}
@@ -101,7 +101,7 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 #tbPerguntas tr td {border-bottom: 1px solid #CCC;padding: 4px 3px; }
 
 #respostas {font-size:11px; position:absolute;padding: 2px;background:#efefef;border: 1px solid #ccc;width:300px; }	
-#respostas .tituloRespostas {font-weight:bold;padding:3px 5px; width: 290px;background:url(../../admin/images/fundo_titulo_lista.png) center center;color:#fff }	
+#respostas .tituloRespostas {font-weight:bold;padding:3px 5px; width: 290px;background:url(../../images/fundo_titulo_lista.png) center center;color:#fff }	
 #respostas .tituloRespostas  a.btnFechar {color:#000; background: #fff ;text-decoration:none;padding: 0px 4px;float:right;font-weight:bold;  }
 #respostas ul{margin: 0px; padding: 0px; list-style:none;font-size:11px;}	
 #respostas ul li{float:left; margin: 0px; padding: 3px; list-style:none;}	
@@ -124,22 +124,22 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 }			
 
 .osX .jScrollPaneTrack {
-	background: url(../../admin/images/rol/osx_track.gif) repeat-y;
+	background: url(../../images/rol/osx_track.gif) repeat-y;
 }
 .osX .jScrollPaneDrag {
-	background: url(../../admin/images/rol/osx_drag_middle.gif) repeat-y;
+	background: url(../../images/rol/osx_drag_middle.gif) repeat-y;
 }
 .osX .jScrollPaneDragTop {
-	background: url(../../admin/images/rol/osx_drag_top.gif) no-repeat;
+	background: url(../../images/rol/osx_drag_top.gif) no-repeat;
 	height: 6px;
 }
 .osX .jScrollPaneDragBottom {
-	background: url(../../admin/images/rol/osx_drag_bottom.gif) no-repeat;
+	background: url(../../images/rol/osx_drag_bottom.gif) no-repeat;
 	height: 7px;
 }
 .osX a.jScrollArrowUp {
 	height: 14px;
-	background: url(../../admin/images/rol/osx_arrow_up.gif) no-repeat 0 -20px;
+	background: url(../../images/rol/osx_arrow_up.gif) no-repeat 0 -20px;
 	margin:5px 0 0 0;
 }
 .osX a.jScrollArrowUp:hover {
@@ -147,7 +147,7 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 }
 .osX a.jScrollArrowDown {
 	height: 14px;
-	background: url(../../admin/images/rol/osx_arrow_down.gif) no-repeat 0 -20px;
+	background: url(../../images/rol/osx_arrow_down.gif) no-repeat 0 -20px;
 }
 .osX a.jScrollArrowDown:hover {
 	background-position: 0 0;
@@ -169,11 +169,11 @@ button {background:url(../../admin/images/fundo_botao.png) center center; border
 
 /* IE SPECIFIC HACKED STYLES */
 * html .osX .jScrollPaneDragBottom {
-	background: url(../../admin/images/rol/osx_drag_bottom.gif) repeat-y;
+	background: url(../../images/rol/osx_drag_bottom.gif) repeat-y;
 	height:100%;
 }
 * html .osX .jScrollPaneDrag {
-	background: url(../../admin/images/rol/osx_drag_middle.png) repeat-y;
+	background: url(../../images/rol/osx_drag_middle.png) repeat-y;
 }
 * html .osX .jScrollPaneDragBottom {
 	bottom: -1px;

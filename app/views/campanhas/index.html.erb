@@ -1,0 +1,34 @@
+<h1>Listing campanhas</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Data inicio</th>
+    <th>Data fim</th>
+    <th>Data troca</th>
+    <th>Regulamento</th>
+    <th>Lance unico</th>
+    <th>Quiz</th>
+    <th>Temporaria</th>
+  </tr>
+
+<% @campanhas.each do |campanha| %>
+  <tr>
+    <td><%=h campanha.titulo %></td>
+    <td><%=h campanha.data_inicio %></td>
+    <td><%=h campanha.data_fim %></td>
+    <td><%=h campanha.data_troca %></td>
+    <td><%=h campanha.regulamento %></td>
+    <td><%=h campanha.lance_unico %></td>
+    <td><%=h campanha.quiz %></td>
+    <td><%=h campanha.temporaria %></td>
+    <td><%= link_to 'Show', campanha %></td>
+    <td><%= link_to 'Edit', edit_campanha_path(campanha) %></td>
+    <td><%= link_to 'Destroy', campanha, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New campanha', new_campanha_path %>

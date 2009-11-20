@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :campanhas
+
   map.resources :vendedores
 
   map.resources :campanhas_agentes

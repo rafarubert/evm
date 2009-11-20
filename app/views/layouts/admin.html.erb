@@ -1,19 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Agentes: <%= controller.action_name %></title>
-  
-  <%= stylesheet_link_tag 'scaffold' %>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Eu Vendo Microsol &bull; Painel</title>
+	<%= javascript_include_tag :all %>
+	<%= stylesheet_link_tag :all %>
 </head>
 <body>
+<div id="corpo">
+   <div id="userBox">
+      <table>
+         <tr>
+            <td>
+               <img src="images/usuario.png" />
 
-<p style="color: green">
-<%= flash[:notice] %></p>
+            </td>
+            <th>
+               Index            </th>
+         </tr>
+      </table>
+   
+   </div>
+   <a href="index.php"><img src="images/logo.png" border="0" /></a>
+   <div id="conteudo">
+      <div id="menu">
+         <div class="titulo">Op&ccedil;&otilde;es</div>
+         <%= link_to "Campanhas", "admin/campanhas" %>
+         <%= link_to "Campanhas Agentes", :controller => "admin/campahas_agentes", :action => "index" %>
+		 <%= link_to "Vendedores", :controller => "admin/vendedores", :action => "index" %>
+		 <%= link_to "Vendedores Ranking", :controller => "admin/vendedores_ranking", :action => "index" %>
+		 <%= link_to "Quiz", :controller => "quiz", :action => "index" %>
+		 <%= link_to "Lance &Uacute;nico", :controller => "lance_unico", :action => "index" %>
+		 <%= link_to "Relat&oacute;rios", :controller => "relatorios", :action => "index" %>
+		 <a href="?acao=opcoes"><img src="images/icones/opcoes.png" /> Op&ccedil;&otilde;es</a>
+         <div class="hr"></div>
+		 <%= link_to "Efetuar logoff", :controller => "login", :action => "logoff" %>
+      </div>
+      <div id="centro">
+         <div id="aguarde">
+            <div id="centroAguarde"> <img src="images/icones/aguarde.png" /> Aguarde ... </div>
+         </div>   
+         <div class="titulo"><img src="images/icones/campanhas.png" /> Lance Unico</div>
+		<%= yield %>
 
-<%= yield %>
+         
 
+
+</div>
 </body>
 </html>
+
