@@ -8,12 +8,13 @@
 <% @agentes.each do |agente| %>
   <tr>
     <td><%=h agente.nome %></td>
-    <td><%= link_to 'Show', [:admin, agente] %></td>
-    <td><%= link_to 'Edit', '/admin/agentes/'#{agente} %></td>
-    <td><%= link_to 'Destroy', [:admin, agente], :confirm => 'Deseja deletar?', :method => :delete %></td>
+    <td><%= link_to 'Show', agente %></td>
+    <td><%= link_to 'Edit', edit_agente_path(agente) %></td>
+    <td><%= link_to 'Destroy', agente, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-<%= render :partial => "form"%>
+
 <br />
 
+<%= link_to 'New agente', new_agente_path %>

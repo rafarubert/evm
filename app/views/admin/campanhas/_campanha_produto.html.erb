@@ -1,0 +1,7 @@
+<p class="vendedor_cv">
+    <label class="label">Produtos</label>
+    <%= f.collection_select :produto_id, Produto.all(:order => "nome"), :id,:nome, {}, {} %>
+
+    <br />
+    
+</p>

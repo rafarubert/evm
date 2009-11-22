@@ -1,2 +1,3 @@
 class AgentesController < ApplicationController
+
 end

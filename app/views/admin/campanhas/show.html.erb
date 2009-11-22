@@ -1,0 +1,30 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @campanha.titulo %>
+</p>
+
+<p>
+  <b>Data inicio:</b>
+  <%=h @campanha.data_inicio %>
+</p>
+
+<p>
+  <b>Data termino:</b>
+  <%=h @campanha.data_termino %>
+</p>
+
+<p>
+  <b>Data troca:</b>
+  <%=h @campanha.data_troca %>
+</p>
+
+<p>
+  <b>Regulamento:</b>
+  <%=h @campanha.regulamento %>
+</p>
+<p>
+  <b>Produtos:</b>
+  <%=h @campanha.campanha_vendedores.vendedor %>
+</p>
+<%= link_to 'Edit', edit_admin_campanha_path(@campanha) %> |
+<%= link_to 'Back', admin_campanhas_path %>

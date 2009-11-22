@@ -1,0 +1,31 @@
+<h1>Listing campanhas</h1>
+
+<div id="listagem">
+  <table id="xReadTable">
+	<thead>
+	  <tr>
+	    <td>Titulo</td>
+	    <td>Data inicio</td>
+	    <td>Data termino</td>
+	    <td>Data troca</td>
+	    <td>Regulamento</td>
+	  </tr>
+    </thead>
+
+<% @campanhas.each do |campanha| %>
+  <tr>
+    <td><%=h campanha.titulo %></td>
+    <td><%=h campanha.data_inicio %></td>
+    <td><%=h campanha.data_termino %></td>
+    <td><%=h campanha.data_troca %></td>
+    <td><%=h campanha.regulamento %></td>
+    <td><%= link_to 'Show', [:admin,campanha] %></td>
+    <td><%= link_to 'Edit', edit_admin_campanha_path(campanha) %></td>
+    <td><%= link_to 'Destroy', [:admin, campanha], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<div id="formulario">
+	<%= render :partial => "form"%>
+</div>
+<br />

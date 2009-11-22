@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  municipio: MyString
+  estado: 
+  estado: MyString
+
+two:
+  municipio: MyString
+  estado: 
+  estado: MyString

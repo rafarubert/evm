@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  premio: MyString
+  pontos: 1
+  ativo: 1
+
+two:
+  premio: MyString
+  pontos: 1
+  ativo: 1

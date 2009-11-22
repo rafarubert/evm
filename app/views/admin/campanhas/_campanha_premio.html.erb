@@ -1,0 +1,7 @@
+<p class="vendedor_cv">
+    <label class="label">Prêmios</label>
+    <%= f.collection_select :premio_id, Premio.all(:order => "premio"), :id,:premio, {}, {} %>
+
+    <br />
+    
+</p>

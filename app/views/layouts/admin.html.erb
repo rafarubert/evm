@@ -5,6 +5,9 @@
 	<title>Eu Vendo Microsol &bull; Painel</title>
 	<%= javascript_include_tag :all %>
 	<%= stylesheet_link_tag :all %>
+	<% javascript_tag do %>
+    	<%= yield(:javascript) %>
+	<% end -%>
 </head>
 <body>
 <div id="corpo">

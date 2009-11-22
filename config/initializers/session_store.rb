@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :key         => '_euvendomicrosol_session',
-  :secret      => '9b4c5d84eb7ac6d0c80c961325591353a3f26d112be6bd15fd2ab2b45ffe53454f2aa171055602878b76713faf60b82090bc9aa48b44c6cc84e1c0c3a42d37b9'
+  :secret      => '66e58f92e7b975f7171817d12e26c18a179df3291cc315b8e822770789653d557d7ddb2ea748ae774e12a0e85a9215f0c071ac17bf378f0a05c338e2cf34e076'
 }
 
 # Use the database for sessions instead of the cookie-based default,

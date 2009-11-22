@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  campanha: 
+  vendedor: 
+  premio: 
+  produto: 
+
+two:
+  campanha: 
+  vendedor: 
+  premio: 
+  produto: 
