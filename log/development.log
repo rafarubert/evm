@@ -16909,3 +16909,2427 @@ Rendered admin/campanhas/_campanha_premio (11.0ms)
 Rendered admin/campanhas/_campanha_produto (22.8ms)
 Rendered admin/campanhas/_form (404.6ms)
 Completed in 497ms (View: 313, DB: 135) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 18:56:14) [GET]
+  [4;36;1mCampanha Load (0.6ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (90.8ms)[0m   [0mSELECT * FROM `vendedores` ORDER BY nome[0m
+  [4;36;1mVendedor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (279.7ms)
+  [4;35;1mPremio Load (1.8ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (12.6ms)
+  [4;35;1mProduto Load (6.2ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (4.9ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (26.4ms)
+Rendered admin/campanhas/_form (442.7ms)
+Completed in 647ms (View: 382, DB: 120) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 18:56:15) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 18:56:15) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:15) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:15) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:15) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 18:56:25) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (93.0ms)[0m   [0mSELECT * FROM `vendedores` ORDER BY nome[0m
+  [4;36;1mVendedor Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (295.2ms)
+  [4;35;1mPremio Load (1.2ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (12.2ms)
+  [4;35;1mProduto Load (7.4ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (26.8ms)
+Rendered admin/campanhas/_form (426.2ms)
+Completed in 589ms (View: 365, DB: 118) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 18:56:26) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 18:56:26) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 18:56:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-22 18:58:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCampanha Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.6ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;35;1mProduto Load (1.5ms)[0m   [0mSELECT * FROM `produtos` [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/show
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+
+ActionView::TemplateError (undefined method `vendedor' for #<Class:0x25bf214>) on line #27 of app/views/admin/campanhas/show.html.erb:
+24: </p>
+25: <p>
+26:   <b>Produtos:</b>
+27:   <%=h @campanha.campanha_vendedores.vendedor %>
+28: </p>
+29: <%= link_to 'Edit', edit_admin_campanha_path(@campanha) %> |
+30: <%= link_to 'Back', admin_campanhas_path %>
+
+    app/views/admin/campanhas/show.html.erb:27
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:00:56) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (92.0ms)[0m   [0mSELECT * FROM `vendedores` ORDER BY nome[0m
+  [4;36;1mVendedor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (282.1ms)
+  [4;35;1mPremio Load (1.2ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (12.4ms)
+  [4;35;1mProduto Load (6.4ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (22.5ms)
+Rendered admin/campanhas/_form (341.5ms)
+Completed in 396ms (View: 262, DB: 115) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:00:59) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (23.7ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (6.3ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (11.6ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mVendedor Load (101.5ms)[0m   [0;1mSELECT * FROM `vendedores` ORDER BY nome[0m
+  [4;35;1mVendedor Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (290.3ms)
+  [4;36;1mPremio Load (1.2ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.6ms)
+  [4;36;1mProduto Load (6.7ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (5.4ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (26.2ms)
+Rendered admin/campanhas/_form (349.5ms)
+Completed in 442ms (View: 257, DB: 163) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:00:59) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:00:59) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:01:11) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (93.3ms)[0m   [0mSELECT * FROM `vendedores` ORDER BY nome[0m
+  [4;36;1mVendedor Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (306.0ms)
+  [4;35;1mPremio Load (1.2ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (10.7ms)
+  [4;35;1mProduto Load (8.0ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (25.6ms)
+Rendered admin/campanhas/_form (368.7ms)
+Completed in 425ms (View: 286, DB: 117) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:01:12) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:12) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:01:12) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:12) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:12) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:01:36) [GET]
+  [4;35;1mCampanha Load (0.4ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mVendedor Load (90.8ms)[0m   [0;1mSELECT * FROM `vendedores` ORDER BY nome[0m
+  [4;35;1mVendedor Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (267.9ms)
+  [4;36;1mPremio Load (1.3ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (12.9ms)
+  [4;36;1mProduto Load (6.8ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (24.2ms)
+Rendered admin/campanhas/_form (331.1ms)
+Completed in 389ms (View: 252, DB: 113) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:01:37) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:01:37) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:01:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:15:26) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+ERROR: compiling _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object RAISED compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+; @output_buffer.concat(( Vendedor.all.each do |v| ).to_s)
+                                                    ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];campanha_vendedor = local_assigns[:campanha_vendedor];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"vendedor_cv\">\n\t<style type=\"text/css\">\n\t#coluna-esquerda {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t</style>\n\t<ul id=\"coluna-esquerda\" class=\"connect\">\n\t\t"
+
+
+
+
+
+; @output_buffer.concat(( Vendedor.all.each do |v| ).to_s)
+@output_buffer.concat "\t\t\n"
+;  end; @output_buffer.concat "\n\t    <li id=\"vendedor_"
+; @output_buffer.concat((v.id).to_s); @output_buffer.concat "\" onclick=\"javascript: setarId(this.id);\">"; @output_buffer.concat((v.nome).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul id=\"coluna-direita\" class=\"connect\">d\n\t</ul>\n\t<div id=\"janela\"></div>\n\t<ul id=\"items\"></ul>\n    <label class=\"label\">Vendedor</label>\n\n    <br />\n    \n</p>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23:in `compile!'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:19:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1033:in `fields_for_nested_model'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1024:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `map'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1023:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:964:in `fields_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:18:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:1:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/index.html.erb:29:in `_run_erb_app47views47admin47campanhas47index46html46erb'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+; @output_buffer.concat(( Vendedor.all.each do |v| ).to_s)
+                                                    ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23: syntax error, unexpected kEND, expecting ')') on line #7 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+4: 	#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<ul id="coluna-esquerda" class="connect">
+7: 		<%= Vendedor.all.each do |v| -%>
+8: 		
+9: 		<%- end%>
+10: 	    <li id="vendedor_<%=v.id%>" onclick="javascript: setarId(this.id);"><%=v.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:23:in `compile!'
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:15:35) [GET]
+  [4;35;1mCampanha Load (0.6ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+ERROR: compiling _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object RAISED compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...t(( Vendedor.all.each do |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];campanha_vendedor = local_assigns[:campanha_vendedor];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"vendedor_cv\">\n\t<style type=\"text/css\">\n\t#coluna-esquerda {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t</style>\n\t<ul id=\"coluna-esquerda\" class=\"connect\">\n\t\t"
+
+
+
+
+
+; @output_buffer.concat(( Vendedor.all.each do |v| ).to_s); @output_buffer.concat "\n\t\t\n"
+
+;  end; @output_buffer.concat "\n\t    <li id=\"vendedor_"
+; @output_buffer.concat((v.id).to_s); @output_buffer.concat "\" onclick=\"javascript: setarId(this.id);\">"; @output_buffer.concat((v.nome).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul id=\"coluna-direita\" class=\"connect\">d\n\t</ul>\n\t<div id=\"janela\"></div>\n\t<ul id=\"items\"></ul>\n    <label class=\"label\">Vendedor</label>\n\n    <br />\n    \n</p>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23:in `compile!'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:19:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1033:in `fields_for_nested_model'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1024:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `map'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1023:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:964:in `fields_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:18:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:1:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/index.html.erb:29:in `_run_erb_app47views47admin47campanhas47index46html46erb'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...t(( Vendedor.all.each do |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23: syntax error, unexpected kEND, expecting ')') on line #7 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+4: 	#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<ul id="coluna-esquerda" class="connect">
+7: 		<%= Vendedor.all.each do |v| %>
+8: 		
+9: 		<%- end%>
+10: 	    <li id="vendedor_<%=v.id%>" onclick="javascript: setarId(this.id);"><%=v.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:23:in `compile!'
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:15:40) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+ERROR: compiling _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object RAISED compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...t(( Vendedor.all.each do |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];campanha_vendedor = local_assigns[:campanha_vendedor];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"vendedor_cv\">\n\t<style type=\"text/css\">\n\t#coluna-esquerda {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t</style>\n\t<ul id=\"coluna-esquerda\" class=\"connect\">\n\t\t"
+
+
+
+
+
+; @output_buffer.concat(( Vendedor.all.each do |v| ).to_s); @output_buffer.concat "\n\t\t\n\t\t"
+
+;  end; @output_buffer.concat "\n\t    <li id=\"vendedor_"
+; @output_buffer.concat((v.id).to_s); @output_buffer.concat "\" onclick=\"javascript: setarId(this.id);\">"; @output_buffer.concat((v.nome).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul id=\"coluna-direita\" class=\"connect\">d\n\t</ul>\n\t<div id=\"janela\"></div>\n\t<ul id=\"items\"></ul>\n    <label class=\"label\">Vendedor</label>\n\n    <br />\n    \n</p>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23:in `compile!'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:19:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1033:in `fields_for_nested_model'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1024:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `map'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1023:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:964:in `fields_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:18:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:1:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/index.html.erb:29:in `_run_erb_app47views47admin47campanhas47index46html46erb'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...t(( Vendedor.all.each do |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:23: syntax error, unexpected kEND, expecting ')') on line #7 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+4: 	#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<ul id="coluna-esquerda" class="connect">
+7: 		<%= Vendedor.all.each do |v| %>
+8: 		
+9: 		<% end%>
+10: 	    <li id="vendedor_<%=v.id%>" onclick="javascript: setarId(this.id);"><%=v.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:23:in `compile!'
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:15:45) [GET]
+  [4;35;1mCampanha Load (0.4ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+ERROR: compiling _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object RAISED compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...cat(( Vendedor.all.each  |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];campanha_vendedor = local_assigns[:campanha_vendedor];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"vendedor_cv\">\n\t<style type=\"text/css\">\n\t#coluna-esquerda {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t</style>\n\t<ul id=\"coluna-esquerda\" class=\"connect\">\n\t\t"
+
+
+
+
+
+; @output_buffer.concat(( Vendedor.all.each  |v| ).to_s); @output_buffer.concat "\n\t\t\n\t\t"
+
+;  end; @output_buffer.concat "\n\t    <li id=\"vendedor_"
+; @output_buffer.concat((v.id).to_s); @output_buffer.concat "\" onclick=\"javascript: setarId(this.id);\">"; @output_buffer.concat((v.nome).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul id=\"coluna-direita\" class=\"connect\">d\n\t</ul>\n\t<div id=\"janela\"></div>\n\t<ul id=\"items\"></ul>\n    <label class=\"label\">Vendedor</label>\n\n    <br />\n    \n</p>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21:in `compile!'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:19:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1033:in `fields_for_nested_model'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1024:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `map'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1023:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:964:in `fields_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:18:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:1:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/index.html.erb:29:in `_run_erb_app47views47admin47campanhas47index46html46erb'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...cat(( Vendedor.all.each  |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting $end) on line #7 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+4: 	#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<ul id="coluna-esquerda" class="connect">
+7: 		<%= Vendedor.all.each  |v| %>
+8: 		
+9: 		<% end%>
+10: 	    <li id="vendedor_<%=v.id%>" onclick="javascript: setarId(this.id);"><%=v.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:21:in `compile!'
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (4.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:15:47) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+ERROR: compiling _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object RAISED compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...ncat(( Vendedor.all.each |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];campanha_vendedor = local_assigns[:campanha_vendedor];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"vendedor_cv\">\n\t<style type=\"text/css\">\n\t#coluna-esquerda {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t</style>\n\t<ul id=\"coluna-esquerda\" class=\"connect\">\n\t\t"
+
+
+
+
+
+; @output_buffer.concat(( Vendedor.all.each |v| ).to_s); @output_buffer.concat "\n\t\t\n\t\t"
+
+;  end; @output_buffer.concat "\n\t    <li id=\"vendedor_"
+; @output_buffer.concat((v.id).to_s); @output_buffer.concat "\" onclick=\"javascript: setarId(this.id);\">"; @output_buffer.concat((v.nome).to_s); @output_buffer.concat "</li>\n\t</ul>\n\t<ul id=\"coluna-direita\" class=\"connect\">d\n\t</ul>\n\t<div id=\"janela\"></div>\n\t<ul id=\"items\"></ul>\n    <label class=\"label\">Vendedor</label>\n\n    <br />\n    \n</p>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21:in `compile!'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:19:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1033:in `fields_for_nested_model'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1024:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `map'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1023:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:964:in `fields_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:18:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:1:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/index.html.erb:29:in `_run_erb_app47views47admin47campanhas47index46html46erb'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...ncat(( Vendedor.all.each |v| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:21: syntax error, unexpected kENSURE, expecting $end) on line #7 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+4: 	#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<ul id="coluna-esquerda" class="connect">
+7: 		<%= Vendedor.all.each |v| %>
+8: 		
+9: 		<% end%>
+10: 	    <li id="vendedor_<%=v.id%>" onclick="javascript: setarId(this.id);"><%=v.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:21:in `compile!'
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:16:22) [GET]
+  [4;35;1mCampanha Load (0.4ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+ERROR: compiling _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object RAISED compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...dedor.all.each do |vendedor| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:20: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:22: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47campanhas47_campanha_vendedor46html46erb_locals_campanha_vendedor_f_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];campanha_vendedor = local_assigns[:campanha_vendedor];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"vendedor_cv\">\n\t<style type=\"text/css\">\n\t#coluna-esquerda {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}\n\t</style>\n\t<ul id=\"coluna-esquerda\" class=\"connect\">\n\t\t"
+
+
+
+
+
+; @output_buffer.concat(( Vendedor.all.each do |vendedor| ).to_s); @output_buffer.concat "\n\t    <li id=\"vendedor_"
+; @output_buffer.concat((vendedor.id).to_s); @output_buffer.concat "\" onclick=\"javascript: setarId(this.id);\">"; @output_buffer.concat((vendedor.nome).to_s); @output_buffer.concat "</li>\n\t\t"
+;  end; @output_buffer.concat "\n\t</ul>\n\t<ul id=\"coluna-direita\" class=\"connect\">d\n\t</ul>\n\t<div id=\"janela\"></div>\n\t<ul id=\"items\"></ul>\n    <label class=\"label\">Vendedor</label>\n\n    <br />\n    \n</p>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:22:in `compile!'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:19:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1033:in `fields_for_nested_model'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1024:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `map'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_proxy.rb:219:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:1023:in `fields_for_with_nested_attributes'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:964:in `fields_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:18:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_form.html.erb:1:in `_run_erb_app47views47admin47campanhas47_form46html46erb_locals_form_object'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/index.html.erb:29:in `_run_erb_app47views47admin47campanhas47index46html46erb'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/tiagofreire/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:7: syntax error, unexpected ')'
+...dedor.all.each do |vendedor| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:20: syntax error, unexpected kENSURE, expecting ')'
+/Users/tiagofreire/Desktop/evm/app/views/admin/campanhas/_campanha_vendedor.html.erb:22: syntax error, unexpected kEND, expecting ')') on line #7 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+4: 	#coluna-direita {width: 320px; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<ul id="coluna-esquerda" class="connect">
+7: 		<%= Vendedor.all.each do |vendedor| %>
+8: 	    <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+9: 		<% end%>
+10: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:22:in `compile!'
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:16:59) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (49.6ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_campanha_vendedor (144.0ms)
+  [4;35;1mPremio Load (1.3ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.1ms)
+  [4;35;1mProduto Load (6.0ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (23.9ms)
+Rendered admin/campanhas/_form (263.2ms)
+Completed in 319ms (View: 226, DB: 70) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:17:00) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:17:00) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:17:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:17:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:17:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:17:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:55:26) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mVendedor Load (49.1ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select Vendedor.all.collect {|v| [v.nome, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<% Vendedor.all.each do |vendedor| %>
+9: 	    <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6:in `select'
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:55:28) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (46.4ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select Vendedor.all.collect {|v| [v.nome, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<% Vendedor.all.each do |vendedor| %>
+9: 	    <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6:in `select'
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:55:48) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mVendedor Load (46.2ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select Vendedor.find(:all).collect {|v| [v.nome, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<% Vendedor.all.each do |vendedor| %>
+9: 	    <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6:in `select'
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 19:56:12) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mVendedor Load (46.9ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vendedores` [0m
+Rendered admin/campanhas/_campanha_vendedor (282.0ms)
+  [4;36;1mPremio Load (1.2ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.4ms)
+  [4;36;1mProduto Load (7.3ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (23.8ms)
+Rendered admin/campanhas/_form (345.7ms)
+Completed in 401ms (View: 310, DB: 69) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:56:13) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-22 19:56:13) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:56:13) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:56:13) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:56:13) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 19:56:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 20:17:02) [GET]
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.6ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x2858138>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-22 20:18:35) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x2852ef4>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
