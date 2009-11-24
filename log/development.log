@@ -19333,3 +19333,3446 @@ ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0
 Rendered rescues/_trace (73.8ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:11:52) [GET]
+  [4;36;1mCampanha Load (0.6ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (21.8ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x2898c74>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (165.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:11:54) [GET]
+  [4;35;1mCampanha Load (3.2ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (5.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x27cbbfc>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:15:08) [GET]
+  [4;36;1mCampanha Load (0.7ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (1.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x27e3b44>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (166.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:39:44) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.5ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x27f5bdc>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (143.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:40:13) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x2898f1c>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 	#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:40:38) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.5ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x27b88b8>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 		#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 	#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:40:46) [GET]
+  [4;36;1mCampanha Load (1.2ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x27900e8>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 		#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 		#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:45:06) [GET]
+  [4;35;1mCampanha Load (1.0ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.5ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (undefined method `estado_id' for #<CampanhaVendedor:0x27736b4>) on line #6 of app/views/admin/campanhas/_campanha_vendedor.html.erb:
+3: 		#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+4: 		#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
+5: 	</style>
+6: 	<%= f.select "estado_id", Estado.find(:all).collect {|v| [v.estado, v.id]}%>
+7: 	<ul id="coluna-esquerda" class="connect">
+8: 		<%= render :partial => "vendedores_lista"%>
+9: 	</ul>
+
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:6
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:47:59) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (Couldn't find Vendedor without an ID) on line #1 of app/views/admin/campanhas/_vendedores_lista.erb:
+1: <% Vendedor.find.each do |vendedor| %>
+2: <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+3: <% end%>
+
+    app/views/admin/campanhas/_vendedores_lista.erb:1
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:8
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 10:54:21) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.5ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (Couldn't find Vendedor without an ID) on line #1 of app/views/admin/campanhas/_vendedores_lista.erb:
+1: <% Vendedor.find.each do |vendedor| %>
+2: <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+3: <% end%>
+
+    app/views/admin/campanhas/_vendedores_lista.erb:1
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:8
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 11:08:00) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (Couldn't find Vendedor without an ID) on line #1 of app/views/admin/campanhas/_vendedores_lista.erb:
+1: <% Vendedor.find.each do |vendedor| %>
+2: <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+3: <% end%>
+
+    app/views/admin/campanhas/_vendedores_lista.erb:1
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:8
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (153.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 11:23:16) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+ActionView::TemplateError (Couldn't find Vendedor without an ID) on line #1 of app/views/admin/campanhas/_vendedores_lista.erb:
+1: <% Vendedor.find.each do |vendedor| %>
+2: <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+3: <% end%>
+
+    app/views/admin/campanhas/_vendedores_lista.erb:1
+    app/views/admin/campanhas/_campanha_vendedor.html.erb:8
+    app/views/admin/campanhas/_form.html.erb:19
+    app/views/admin/campanhas/_form.html.erb:18
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 11:24:07) [GET]
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mVendedor Load (44.1ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (137.8ms)
+Rendered admin/campanhas/_campanha_vendedor (151.8ms)
+  [4;35;1mPremio Load (1.5ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (26.6ms)
+  [4;35;1mProduto Load (6.0ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (22.6ms)
+Rendered admin/campanhas/_form (283.7ms)
+Completed in 417ms (View: 252, DB: 67) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-23 11:24:08) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-23 11:24:08) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 11:24:08) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 11:24:08) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 11:24:08) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 11:24:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-23 15:49:40) [GET]
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanha Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.5ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mVendedor Load (44.6ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (207.7ms)
+Rendered admin/campanhas/_campanha_vendedor (228.1ms)
+  [4;36;1mPremio Load (1.4ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.3ms)
+  [4;36;1mProduto Load (6.7ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (22.1ms)
+Rendered admin/campanhas/_form (296.5ms)
+Completed in 349ms (View: 258, DB: 68) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-23 15:49:41) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-23 15:49:41) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 15:49:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 15:49:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 15:49:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 15:49:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-23 16:03:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (33.5ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;36;1mProduto Load (1.6ms)[0m   [0;1mSELECT * FROM `produtos` [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/show
+  [4;35;1mSQL (116.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+
+ActionView::TemplateError (undefined method `vendedor' for #<Class:0x27ebbf0>) on line #27 of app/views/admin/campanhas/show.html.erb:
+24: </p>
+25: <p>
+26:   <b>Produtos:</b>
+27:   <%=h @campanha.campanha_vendedores.vendedor %>
+28: </p>
+29: <%= link_to 'Edit', edit_admin_campanha_path(@campanha) %> |
+30: <%= link_to 'Back', admin_campanhas_path %>
+
+    app/views/admin/campanhas/show.html.erb:27
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-23 16:04:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.6ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;35;1mProduto Load (1.5ms)[0m   [0mSELECT * FROM `produtos` [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/show
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanhaVendedor Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+
+ActionView::TemplateError (undefined method `vendedor' for #<Class:0x26401ac>) on line #27 of app/views/admin/campanhas/show.html.erb:
+24: </p>
+25: <p>
+26:   <b>Produtos:</b>
+27:   <%=h @campanha.campanha_vendedores.vendedor %>
+28: </p>
+29: <%= link_to 'Edit', edit_admin_campanha_path(@campanha) %> |
+30: <%= link_to 'Back', admin_campanhas_path %>
+
+    app/views/admin/campanhas/show.html.erb:27
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-23 16:04:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.6ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;36;1mProduto Load (1.6ms)[0m   [0;1mSELECT * FROM `produtos` [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/show
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+
+ActionView::TemplateError (undefined method `vendedor' for #<Class:0x273b598>) on line #27 of app/views/admin/campanhas/show.html.erb:
+24: </p>
+25: <p>
+26:   <b>Produtos:</b>
+27:   <%=h @campanha.campanha_vendedores.vendedor %>
+28: </p>
+29: <%= link_to 'Edit', edit_admin_campanha_path(@campanha) %> |
+30: <%= link_to 'Back', admin_campanhas_path %>
+
+    app/views/admin/campanhas/show.html.erb:27
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:01:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:01:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-24 11:01:37) [GET]
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 79ms (View: 76, DB: 0) | 200 OK [http://0.0.0.0/admin]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-24 11:01:57) [GET]
+  [4;36;1mCampanha Columns (32.1ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanhaVendedor Columns (26.2ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (30.6ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (39.9ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (34.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mVendedor Load (157.2ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (6.5ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (383.4ms)
+Rendered admin/campanhas/_campanha_vendedor (458.0ms)
+  [4;35;1mPremio Load (10.9ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (22.7ms)
+  [4;35;1mProduto Load (30.0ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (47.9ms)
+Rendered admin/campanhas/_form (725.9ms)
+Completed in 1091ms (View: 617, DB: 375) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:01:59) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:01:59) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::VendedoresController#index (for 127.0.0.1 at 2009-11-24 11:02:11) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-24 11:09:41) [GET]
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/admin/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:09:41) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:09:41) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:09:42) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-24 11:09:46) [GET]
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/admin/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:09:46) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:09:46) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:09:46) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:09:47) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#admin (for 127.0.0.1 at 2009-11-24 11:11:06) [GET]
+  Parameters: {"id"=>"campanhas"}
+
+ActionController::UnknownAction (No action responded to admin. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#admin (for 127.0.0.1 at 2009-11-24 11:11:51) [GET]
+  Parameters: {"id"=>"campanhas"}
+
+ActionController::UnknownAction (No action responded to admin. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-24 11:11:53) [GET]
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/admin/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:11:53) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:11:53) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:11:53) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:11:53) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:11:53) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-11-24 11:12:29) [GET]
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 90ms (View: 87, DB: 0) | 200 OK [http://0.0.0.0/admin/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:12:30) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:12:30) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:30) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:30) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:30) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-24 11:12:31) [GET]
+  [4;35;1mCampanha Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.5ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanhaVendedor Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.7ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (5.9ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mVendedor Load (54.3ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (240.6ms)
+Rendered admin/campanhas/_campanha_vendedor (261.0ms)
+  [4;36;1mPremio Load (1.5ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (13.5ms)
+  [4;36;1mProduto Load (11.2ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (35.4ms)
+Rendered admin/campanhas/_form (337.0ms)
+Completed in 399ms (View: 280, DB: 91) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:12:32) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:32) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:12:32) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:32) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:32) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:12:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-24 11:13:58) [GET]
+  [4;36;1mCampanha Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.6ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (0.5ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mVendedor Load (68.5ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (267.5ms)
+Rendered admin/campanhas/_campanha_vendedor (281.9ms)
+  [4;35;1mPremio Load (1.8ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.7ms)
+  [4;35;1mProduto Load (10.4ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (27.2ms)
+Rendered admin/campanhas/_form (341.7ms)
+Completed in 409ms (View: 280, DB: 101) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;35;1mSQL (3.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:13:59) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (6.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:14:00) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:14:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mCampanha Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (35.1ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #15 of app/views/admin/campanhas/edit.html.erb:
+12: 	  </tr>
+13:     </thead>
+14: 
+15: <% @campanhas.each do |campanha| %>
+16:   <tr>
+17:     <td><%=h campanha.titulo %></td>
+18:     <td><%=h campanha.data_inicio %></td>
+
+    app/views/admin/campanhas/edit.html.erb:15
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:14:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mCampanha Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 3) [0m
+  [4;35;1mCampanha Load (0.2ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanhaVendedor Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/edit
+  [4;35;1mCampanhaVendedor Load (0.4ms)[0m   [0mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 3) [0m
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mVendedor Load (62.6ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (273.2ms)
+Rendered admin/campanhas/_campanha_vendedor (284.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vendedores` [0m
+Rendered admin/campanhas/_vendedores_lista (46.4ms)
+Rendered admin/campanhas/_campanha_vendedor (49.1ms)
+  [4;36;1mCampanhaPremio Load (0.4ms)[0m   [0;1mSELECT * FROM `campanha_premios` WHERE (`campanha_premios`.campanha_id = 3) [0m
+  [4;35;1mPremio Load (1.3ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (18.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+Rendered admin/campanhas/_campanha_premio (2.2ms)
+  [4;36;1mCampanhaProduto Load (0.5ms)[0m   [0;1mSELECT * FROM `campanha_produtos` WHERE (`campanha_produtos`.campanha_id = 3) [0m
+  [4;35;1mProduto Load (7.6ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (28.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+Rendered admin/campanhas/_campanha_produto (12.6ms)
+Rendered admin/campanhas/_form (504.7ms)
+Completed in 579ms (View: 456, DB: 89) | 200 OK [http://0.0.0.0/admin/campanhas/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/3/images/logo.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/3/images/usuario.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/3/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/3/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:34) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/3/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:14:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:28:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.6ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #15 of app/views/admin/campanhas/index.html.erb:
+12: 	  </tr>
+13:     </thead>
+14: 
+15: <% @campanhas.each do |campanha| %>
+16:   <tr>
+17:     <td><%=h campanha.titulo %></td>
+18:     <td><%=h campanha.data_inicio %></td>
+
+    app/views/admin/campanhas/index.html.erb:15
+    app/controllers/admin/campanhas_controller.rb:14:in `edit'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:28:59) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #15 of app/views/admin/campanhas/index.html.erb:
+12: 	  </tr>
+13:     </thead>
+14: 
+15: <% @campanhas.each do |campanha| %>
+16:   <tr>
+17:     <td><%=h campanha.titulo %></td>
+18:     <td><%=h campanha.data_inicio %></td>
+
+    app/views/admin/campanhas/index.html.erb:15
+    app/controllers/admin/campanhas_controller.rb:18:in `edit'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:29:15) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #15 of app/views/admin/campanhas/index.html.erb:
+12: 	  </tr>
+13:     </thead>
+14: 
+15: <% @campanhas.each do |campanha| %>
+16:   <tr>
+17:     <td><%=h campanha.titulo %></td>
+18:     <td><%=h campanha.data_inicio %></td>
+
+    app/views/admin/campanhas/index.html.erb:15
+    app/controllers/admin/campanhas_controller.rb:18:in `edit'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:30:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mCampanha Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/admin/campanhas/_form.html.erb:
+1: <% form_for([:admin, @campanha]) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    app/controllers/admin/campanhas_controller.rb:18:in `edit'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:30:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Load (5.2ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mCampanha Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/admin/campanhas/_form.html.erb:
+1: <% form_for([:admin, @campanha]) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/admin/campanhas/_form.html.erb:1
+    app/views/admin/campanhas/index.html.erb:29
+    app/controllers/admin/campanhas_controller.rb:18:in `edit'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:30:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Load (0.4ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.campanha_vendedores):
+  app/controllers/admin/campanhas_controller.rb:18:in `edit'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:30:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCampanha Columns (234.3ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (182.7ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanhaVendedor Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (9.2ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mVendedor Load (57.2ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (231.2ms)
+Rendered admin/campanhas/_campanha_vendedor (242.4ms)
+  [4;36;1mPremio Load (1.2ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (15.7ms)
+  [4;36;1mProduto Load (6.6ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (24.3ms)
+Rendered admin/campanhas/_form (310.9ms)
+Completed in 789ms (View: 261, DB: 503) | 200 OK [http://0.0.0.0/admin/campanhas/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:30:46) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/logo.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/usuario.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:31:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.3ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mEstado Load (1.3ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mVendedor Load (54.1ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (250.3ms)
+Rendered admin/campanhas/_campanha_vendedor (264.9ms)
+  [4;35;1mPremio Load (1.4ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.2ms)
+  [4;35;1mProduto Load (15.4ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (31.9ms)
+Rendered admin/campanhas/_form (330.4ms)
+Completed in 458ms (View: 343, DB: 88) | 200 OK [http://0.0.0.0/admin/campanhas/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:31:51) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/logo.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:31:52) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/usuario.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (9.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:31:52) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:31:52) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:31:52) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:31:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:32:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCampanha Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.3ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;35;1mCampanha Load (0.2ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanhaVendedor Columns (28.9ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mCampanhaVendedor Load (0.4ms)[0m   [0mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 1) [0m
+  [4;36;1mEstado Load (2.4ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mVendedor Load (96.5ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (267.8ms)
+Rendered admin/campanhas/_campanha_vendedor (281.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vendedores` [0m
+Rendered admin/campanhas/_vendedores_lista (49.7ms)
+Rendered admin/campanhas/_campanha_vendedor (57.0ms)
+  [4;36;1mCampanhaPremio Load (0.4ms)[0m   [0;1mSELECT * FROM `campanha_premios` WHERE (`campanha_premios`.campanha_id = 1) [0m
+  [4;35;1mPremio Load (1.2ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (10.5ms)
+  [4;35;1mCampanhaProduto Load (0.3ms)[0m   [0mSELECT * FROM `campanha_produtos` WHERE (`campanha_produtos`.campanha_id = 1) [0m
+  [4;36;1mProduto Load (10.1ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (27.7ms)
+Rendered admin/campanhas/_form (408.2ms)
+Completed in 607ms (View: 424, DB: 154) | 200 OK [http://0.0.0.0/admin/campanhas/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/logo.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/usuario.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#update (for 127.0.0.1 at 2009-11-24 11:33:32) [PUT]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "id"=>"1", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"21", "campanha_vendedores_attributes"=>{"0"=>{"id"=>"1", "estado"=>"10039"}, "1"=>{"estado"=>"10039"}}, "titulo"=>"titulo aaaa", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"teste", "data_troca(3i)"=>"21", "data_inicio(3i)"=>"21", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;36;1mCampanha Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.5ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;36;1mCampanhaPremio Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+  [4;35;1mCampanhaVendedor Load (0.4ms)[0m   [0mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 1) [0m
+  [4;36;1mCampanhaVendedor Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+
+ActiveRecord::AssociationTypeMismatch (Estado(#20641310) expected, got String(#111100)):
+  app/controllers/admin/campanhas_controller.rb:40:in `update'
+  app/controllers/admin/campanhas_controller.rb:39:in `update'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#edit (for 127.0.0.1 at 2009-11-24 11:34:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.7ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;35;1mCampanha Load (0.2ms)[0m   [0mSELECT * FROM `campanhas` [0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mCampanhaPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;35;1mCampanhaVendedor Load (0.4ms)[0m   [0mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 1) [0m
+  [4;36;1mVendedor Load (52.5ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (176.6ms)
+Rendered admin/campanhas/_campanha_vendedor (178.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+Rendered admin/campanhas/_vendedores_lista (128.0ms)
+Rendered admin/campanhas/_campanha_vendedor (129.0ms)
+  [4;35;1mCampanhaPremio Load (0.4ms)[0m   [0mSELECT * FROM `campanha_premios` WHERE (`campanha_premios`.campanha_id = 1) [0m
+  [4;36;1mPremio Load (1.5ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (11.2ms)
+  [4;36;1mCampanhaProduto Load (0.4ms)[0m   [0;1mSELECT * FROM `campanha_produtos` WHERE (`campanha_produtos`.campanha_id = 1) [0m
+  [4;35;1mProduto Load (7.2ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (27.0ms)
+Rendered admin/campanhas/_form (385.3ms)
+Completed in 520ms (View: 347, DB: 76) | 200 OK [http://0.0.0.0/admin/campanhas/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:34:32) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/usuario.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:34:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/logo.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:34:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:34:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:34:33) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/1/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:34:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (5.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#update (for 127.0.0.1 at 2009-11-24 11:34:47) [PUT]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "id"=>"1", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"21", "campanha_vendedores_attributes"=>{"0"=>{"id"=>"1"}}, "titulo"=>"titulo aaaa", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"teste", "data_troca(3i)"=>"21", "data_inicio(3i)"=>"21", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;35;1mCampanha Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.6ms)[0m   [0;1mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;35;1mCampanhaPremio Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+  [4;36;1mCampanhaVendedor Load (0.5ms)[0m   [0;1mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 1) [0m
+  [4;35;1mCampanhaVendedor Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCampanha Update (26.1ms)[0m   [0;1mUPDATE `campanhas` SET `updated_at` = '2009-11-24 14:34:47', `titulo` = 'titulo aaaa' WHERE `id` = 1[0m
+  [4;35;1mCampanhaPremio Create (0.3ms)[0m   [0mINSERT INTO `campanha_premios` (`created_at`, `updated_at`, `campanha_id`, `premio_id`) VALUES('2009-11-24 14:34:47', '2009-11-24 14:34:47', 1, 101)[0m
+  [4;36;1mCampanhaProduto Create (0.2ms)[0m   [0;1mINSERT INTO `campanha_produtos` (`produto_id`, `created_at`, `updated_at`, `campanha_id`) VALUES(18674, '2009-11-24 14:34:47', '2009-11-24 14:34:47', 1)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/campanhas/1
+Completed in 170ms (DB: 42) | 302 Found [http://0.0.0.0/admin/campanhas/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-24 11:34:47) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/admin
+Rendering admin/campanhas/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.titulo) on line #3 of app/views/admin/campanhas/show.html.erb:
+1: <p>
+2:   <b>Titulo:</b>
+3:   <%=h @campanha.titulo %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/admin/campanhas/show.html.erb:3
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-24 11:35:34) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/admin/campanhas_controller.rb:21:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-24 11:35:36) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/admin/campanhas_controller.rb:21:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-24 11:35:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (1.1ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #15 of app/views/admin/campanhas/index.html.erb:
+12: 	  </tr>
+13:     </thead>
+14: 
+15: <% @campanhas.each do |campanha| %>
+16:   <tr>
+17:     <td><%=h campanha.titulo %></td>
+18:     <td><%=h campanha.data_inicio %></td>
+
+    app/views/admin/campanhas/index.html.erb:15
+    app/controllers/admin/campanhas_controller.rb:22:in `show'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-24 11:36:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCampanha Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (1.2ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;36;1mCampanha Load (0.3ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanhaVendedor Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mCampanhaVendedor Load (0.3ms)[0m   [0;1mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 1) [0m
+  [4;35;1mVendedor Load (47.6ms)[0m   [0mSELECT * FROM `vendedores` [0m
+  [4;36;1mVendedor Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (208.7ms)
+Rendered admin/campanhas/_campanha_vendedor (209.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vendedores` [0m
+Rendered admin/campanhas/_vendedores_lista (44.4ms)
+Rendered admin/campanhas/_campanha_vendedor (45.3ms)
+  [4;36;1mCampanhaPremio Load (0.6ms)[0m   [0;1mSELECT * FROM `campanha_premios` WHERE (`campanha_premios`.campanha_id = 1) [0m
+  [4;35;1mPremio Load (1.2ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;36;1mPremio Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (12.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `premios` ORDER BY premio[0m
+Rendered admin/campanhas/_campanha_premio (2.3ms)
+  [4;36;1mCampanhaProduto Load (0.4ms)[0m   [0;1mSELECT * FROM `campanha_produtos` WHERE (`campanha_produtos`.campanha_id = 1) [0m
+  [4;35;1mProduto Load (5.9ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;36;1mProduto Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (23.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `produtos` ORDER BY nome[0m
+Rendered admin/campanhas/_campanha_produto (7.8ms)
+Rendered admin/campanhas/_form (336.5ms)
+Completed in 474ms (View: 370, DB: 74) | 200 OK [http://0.0.0.0/admin/campanhas/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#images to png (for 127.0.0.1 at 2009-11-24 11:36:07) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#images to png (for 127.0.0.1 at 2009-11-24 11:36:07) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:36:07) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:36:07) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:36:07) [GET]
+
+ActionController::RoutingError (No route matches "/admin/campanhas/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:36:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#show (for 127.0.0.1 at 2009-11-24 11:37:19) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/admin
+Rendering admin/campanhas/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.titulo) on line #3 of app/views/admin/campanhas/show.html.erb:
+1: <p>
+2:   <b>Titulo:</b>
+3:   <%=h @campanha.titulo %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/admin/campanhas/show.html.erb:3
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#update (for 127.0.0.1 at 2009-11-24 11:38:40) [PUT]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "id"=>"1", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"21", "campanha_vendedores_attributes"=>{"0"=>{"id"=>"1"}}, "titulo"=>"titulo testestestes", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"teste", "data_troca(3i)"=>"21", "data_inicio(3i)"=>"21", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;36;1mCampanha Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanha Load (0.3ms)[0m   [0mSELECT * FROM `campanhas` WHERE (`campanhas`.`id` = 1) [0m
+  [4;36;1mCampanhaPremio Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `campanha_premios`[0m
+  [4;35;1mCampanhaVendedor Load (0.5ms)[0m   [0mSELECT * FROM `campanha_vendedores` WHERE (`campanha_vendedores`.campanha_id = 1) [0m
+  [4;36;1mCampanhaVendedor Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;35;1mCampanhaProduto Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCampanha Update (0.4ms)[0m   [0mUPDATE `campanhas` SET `updated_at` = '2009-11-24 14:38:40', `titulo` = 'titulo testestestes' WHERE `id` = 1[0m
+  [4;36;1mCampanhaPremio Create (0.2ms)[0m   [0;1mINSERT INTO `campanha_premios` (`created_at`, `updated_at`, `campanha_id`, `premio_id`) VALUES('2009-11-24 14:38:40', '2009-11-24 14:38:40', 1, 101)[0m
+  [4;35;1mCampanhaProduto Create (0.2ms)[0m   [0mINSERT INTO `campanha_produtos` (`produto_id`, `created_at`, `updated_at`, `campanha_id`) VALUES(18674, '2009-11-24 14:38:40', '2009-11-24 14:38:40', 1)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/campanhas
+Completed in 55ms (DB: 13) | 302 Found [http://0.0.0.0/admin/campanhas/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#index (for 127.0.0.1 at 2009-11-24 11:38:40) [GET]
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mCampanha Load (0.3ms)[0m   [0;1mSELECT * FROM `campanhas` [0m
+  [4;35;1mCampanhaVendedor Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_vendedores`[0m
+  [4;36;1mCampanhaProduto Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `campanha_produtos`[0m
+  [4;35;1mCampanhaPremio Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+Rendering template within layouts/admin
+Rendering admin/campanhas/index
+  [4;36;1mVendedor Load (47.7ms)[0m   [0;1mSELECT * FROM `vendedores` [0m
+  [4;35;1mVendedor Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `vendedores`[0m
+Rendered admin/campanhas/_vendedores_lista (157.0ms)
+Rendered admin/campanhas/_campanha_vendedor (157.9ms)
+  [4;36;1mPremio Load (1.3ms)[0m   [0;1mSELECT * FROM `premios` ORDER BY premio[0m
+  [4;35;1mPremio Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `premios`[0m
+Rendered admin/campanhas/_campanha_premio (79.9ms)
+  [4;36;1mProduto Load (6.2ms)[0m   [0;1mSELECT * FROM `produtos` ORDER BY nome[0m
+  [4;35;1mProduto Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `produtos`[0m
+Rendered admin/campanhas/_campanha_produto (23.9ms)
+Rendered admin/campanhas/_form (285.0ms)
+Completed in 427ms (View: 249, DB: 68) | 200 OK [http://0.0.0.0/admin/campanhas]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:38:41) [GET]
+  Parameters: {"id"=>"usuario"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#images to png (for 127.0.0.1 at 2009-11-24 11:38:41) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: index):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/opcoes.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/aguarde.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:38:42) [GET]
+
+ActionController::RoutingError (No route matches "/admin/images/icones/campanhas.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-24 11:38:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/add.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#create (for 127.0.0.1 at 2009-11-24 11:46:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"24", "titulo"=>"22/07/1988", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"", "data_troca(3i)"=>"24", "data_inicio(3i)"=>"24", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;36;1mSQL (56.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanha Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+
+NoMethodError (undefined method `data_i' for #<Class:0x27d4888>):
+  app/models/campanha.rb:8
+  app/controllers/admin/campanhas_controller.rb:23:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#create (for 127.0.0.1 at 2009-11-24 11:46:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"24", "titulo"=>"22/07/1988", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"", "data_troca(3i)"=>"24", "data_inicio(3i)"=>"24", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanha Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanha Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+
+NoMethodError (undefined method `data_i' for #<Class:0x2696a20>):
+  app/models/campanha.rb:8
+  app/controllers/admin/campanhas_controller.rb:23:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#create (for 127.0.0.1 at 2009-11-24 11:46:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"24", "titulo"=>"22/07/1988", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"", "data_troca(3i)"=>"24", "data_inicio(3i)"=>"24", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanha Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCampanha Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `campanhas`[0m
+
+NoMethodError (undefined method `data_i' for #<Class:0x2834260>):
+  app/models/campanha.rb:13
+  app/controllers/admin/campanhas_controller.rb:23:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CampanhasController#create (for 127.0.0.1 at 2009-11-24 11:47:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3ylctGNMW5Ludd4rO0QAZFYhptDYKO6O0v+uhopGbwg=", "campanha"=>{"campanha_premios_attributes"=>{"0"=>{"premio_id"=>"101"}}, "data_termino(3i)"=>"24", "titulo"=>"22/07/1988", "data_troca(1i)"=>"2009", "data_inicio(1i)"=>"2009", "data_troca(2i)"=>"11", "campanha_produtos_attributes"=>{"0"=>{"produto_id"=>"18674"}}, "data_inicio(2i)"=>"11", "regulamento"=>"", "data_troca(3i)"=>"24", "data_inicio(3i)"=>"24", "data_termino(1i)"=>"2009", "data_termino(2i)"=>"11"}}
+  [4;36;1mCampanha Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `campanhas`[0m
+  [4;35;1mCampanhaPremio Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `campanha_premios`[0m
+
+NoMethodError (undefined method `data=' for #<Campanha:0x26e15e8>):
+  app/models/campanha.rb:10:in `titulo='
+  app/controllers/admin/campanhas_controller.rb:23:in `new'
+  app/controllers/admin/campanhas_controller.rb:23:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)

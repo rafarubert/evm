@@ -28,13 +28,13 @@
    <div id="conteudo">
       <div id="menu">
          <div class="titulo">Op&ccedil;&otilde;es</div>
-         <%= link_to "Campanhas", "admin/campanhas" %>
-         <%= link_to "Campanhas Agentes", :controller => "admin/campahas_agentes", :action => "index" %>
-		 <%= link_to "Vendedores", :controller => "admin/vendedores", :action => "index" %>
-		 <%= link_to "Vendedores Ranking", :controller => "admin/vendedores_ranking", :action => "index" %>
-		 <%= link_to "Quiz", :controller => "quiz", :action => "index" %>
-		 <%= link_to "Lance &Uacute;nico", :controller => "lance_unico", :action => "index" %>
-		 <%= link_to "Relat&oacute;rios", :controller => "relatorios", :action => "index" %>
+         <%= link_to "Campanhas", "/admin/campanhas" %>
+         <%= link_to "Campanhas Agentes", :controller => "/admin/campahas_agentes", :action => "index" %>
+		 <%= link_to "Vendedores", :controller => "/admin/vendedores", :action => "index" %>
+		 <%= link_to "Vendedores Ranking", :controller => "/admin/vendedores_ranking", :action => "index" %>
+		 <%= link_to "Quiz", :controller => "/quiz", :action => "index" %>
+		 <%= link_to "Lance &Uacute;nico", :controller => "/lance_unico", :action => "index" %>
+		 <%= link_to "Relat&oacute;rios", :controller => "/relatorios", :action => "index" %>
 		 <a href="?acao=opcoes"><img src="images/icones/opcoes.png" /> Op&ccedil;&otilde;es</a>
          <div class="hr"></div>
 		 <%= link_to "Efetuar logoff", :controller => "login", :action => "logoff" %>

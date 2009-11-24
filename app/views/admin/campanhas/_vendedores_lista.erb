@@ -1,3 +1,3 @@
-<% Vendedor.find.each do |vendedor| %>
+<% Vendedor.find(:all).each do |vendedor| %>
 <li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
 <% end%>
