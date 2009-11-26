@@ -3,6 +3,7 @@ class Campanha < ActiveRecord::Base
   has_many :campanha_vendedores
   has_many :campanha_premios
   has_many :campanha_produtos
+  has_many :estados
   validates_presence_of :titulo, :data_inicio, :data_termino, :data_troca, :regulamento
   
   def titulo=(data)

@@ -1,3 +1,6 @@
-<% Vendedor.find(:all).each do |vendedor| %>
-<li id="vendedor_<%=vendedor.id%>" onclick="javascript: setarId(this.id);"><%=vendedor.nome%></li>
+<% Vendedor.all(:conditions=>["estado_id=?", params[:estado_id]]).each_with_index do |vendedor, id| %>
+<li id="vendedor_<%=vendedor.id%>" onclick="javascript: dragVendedores(this.id, '<%=vendedor.id%>', '<%=vendedor.nome%>');">
+	<%=vendedor.nome%>
+</li>
 <% end%>
+

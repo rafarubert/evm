@@ -1,9 +1,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  reconnect: false
   database: euvendomicrosol_development
-  pool: 5
   username: root
   password:
   host: localhost

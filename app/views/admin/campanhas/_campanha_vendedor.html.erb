@@ -3,14 +3,18 @@
 			#coluna-esquerda {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
 			#coluna-direita {width: 320px; float:left; height: 80px; background-color: #C3C3C3; display: block; overflow: auto;}
 		</style>
-
+		<%= select :estado,
+			       :estado_id,
+		           Estado.find(:all).collect {|t| [t.estado, t.id]},
+		           {:prompt=>"--Selecione o estado--"},
+		           :onchange=>remote_function(:update=>"coluna-esquerda",
+		           :url=>{:action=>"lista_vendedores"},:with=>"'estado_id='+value")
+	 	%>
+			
 		<ul id="coluna-esquerda" class="connect">
-			<%= render :partial => "vendedores_lista"%>
+		
 		</ul>
 		<ul id="coluna-direita" class="connect">
 		</ul>
 		<div id="janela"></div>
-		<ul id="items"></ul>
-	    <label class="label">Vendedor</label>
-	    <br />
-	</p>	 
+	</p>

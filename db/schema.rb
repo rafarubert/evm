@@ -58,21 +58,19 @@ ActiveRecord::Schema.define(:version => 20091122194617) do
   end
 
   create_table "estados", :force => true do |t|
-    t.string   "estado",     :limit => 150
-    t.string   "sigla",      :limit => 10
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.string   "estado"
+    t.string   "sigla"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "municipios", :force => true do |t|
-    t.string   "municipio",  :limit => 150
-    t.integer  "estado_id",                 :null => false
-    t.string   "estado",     :limit => 10
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.string   "municipio"
+    t.integer  "estado_id"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
-
-  add_index "municipios", ["estado_id"], :name => "id_estado"
 
   create_table "premios", :force => true do |t|
     t.string   "premio"
@@ -91,32 +89,27 @@ ActiveRecord::Schema.define(:version => 20091122194617) do
   end
 
   create_table "vendedores", :force => true do |t|
-    t.integer  "revenda_id",                                  :null => false
-    t.integer  "estado_id",                                   :null => false
-    t.integer  "municipio_id",                                :null => false
-    t.string   "cpf",           :limit => 12
-    t.string   "email",         :limit => 150,                :null => false
-    t.string   "senha",         :limit => 32,                 :null => false
-    t.string   "nome",          :limit => 150,                :null => false
-    t.binary   "sexo",          :limit => 1
-    t.string   "telefone",      :limit => 10,                 :null => false
-    t.string   "celular",       :limit => 10
-    t.string   "cidade",        :limit => 100,                :null => false
-    t.string   "endereco",      :limit => 200,                :null => false
-    t.string   "numero",        :limit => 20,                 :null => false
-    t.string   "complemento",   :limit => 50,                 :null => false
-    t.string   "bairro",        :limit => 50,                 :null => false
-    t.string   "cep",           :limit => 8,                  :null => false
-    t.date     "data_nasc",                                   :null => false
-    t.integer  "ativo",         :limit => 2,   :default => 0
-    t.datetime "data_cadastro"
-    t.string   "cnpj_revenda",  :limit => 20
-    t.datetime "created_at",                                  :null => false
-    t.datetime "updated_at",                                  :null => false
+    t.integer  "revenda_id"
+    t.integer  "estado_id"
+    t.integer  "municipio_id"
+    t.string   "cpf"
+    t.string   "email"
+    t.string   "senha"
+    t.string   "nome"
+    t.integer  "sexo"
+    t.string   "telefone"
+    t.string   "celular"
+    t.string   "cidade"
+    t.string   "endereco"
+    t.string   "numero"
+    t.string   "complemento"
+    t.string   "cep"
+    t.date     "data_nasc"
+    t.integer  "ativo"
+    t.date     "data_cadastro"
+    t.string   "cnpj_revenda"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
-
-  add_index "vendedores", ["estado_id"], :name => "vwestado_id"
-  add_index "vendedores", ["municipio_id"], :name => "vwmunicipio_id"
-  add_index "vendedores", ["revenda_id"], :name => "revenda_id"
 
 end

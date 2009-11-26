@@ -14,7 +14,7 @@
            } 
        });
     });
-    function setarId(id){
+    function dragVendedores(id, ID, revenda){
       item_atual = id; 
       if (tipo == "out") {
           $("#item_" + id).fadeOut('slow', function(){
@@ -22,10 +22,7 @@
           });
       }
       else {   
-          var html = "<div id=\"container-janela\">";
-          html += "<input type=\"text\" id=\"valor-item\" />"; 
-          html += '<input onclick="javascript: adicionar();" type="button" id="valor-item" value="\m/"/>';
-          html += "</div>";
+          var html = '<input type="hidden" name="campanha[campanha_vendedores_attributes]['+ID+'][premio_id]" id="campanha_vendedores_'+ID+'" value="'+ID+'"';
           $("#janela").append(html);
       }
     }

@@ -17,11 +17,10 @@ class Admin::CampanhasController < ApplicationController
     @campanha.campanha_premios.build
     render :action => "index"
   end
-
   
   def create
    @campanha = Campanha.new(params[:campanha])
-   
+   render :text => params[:campanha]
    respond_to do |format|
      if @campanha.save
        flash[:notice] = 'Campanha adicionada com sucesso.'
@@ -57,6 +56,10 @@ class Admin::CampanhasController < ApplicationController
      format.html { redirect_to(campanhas_url) }
      format.xml  { head :ok }
    end
+  end
+  
+  def lista_vendedores
+    render :partial => "vendedores_lista"
   end
   
 end
