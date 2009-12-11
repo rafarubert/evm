@@ -75,32 +75,23 @@
                     <div class="portal">
                         <div class="connect fl">
                             <h3>Produtos Disponíveis</h3>
-                            <ul id="cosluna-esquerda">
-                                <li>Morbi rhoncus augue tincidunt arcu congue suscipit.</li>
-
-                                <li>Aliquam sit amet mauris erat, vitae ultrices nisl.</li>
-                                <li>Sed hendrerit ante ut enim vehicula eu vulputate enim iaculis.</li>
-                                <li>Vivamus id elit vitae odio tempor rutrum ac adipiscing massa.</li>
-                                <li>Nullam ac neque et est imperdiet rhoncus.</li>
-                                <li>Vivamus viverra libero sit amet justo interdum volutpat.</li>
-                                <li>In id massa sem, ac sollicitudin justo.</li>
-
+                            <ul id="cosluna-esquerda" class="produtos-esquerda conexao">
+                                <% Produto.all.each do |produto| %>
+								<li id="<%=produto.id%>"><%=produto.nome%></li>
+								<% end%>
                             </ul>
                         </div>
-                        
+                        <div id="janela"></div>
                         <div class="connect fr">
                             <h3>Produtos participantes</h3>
-                            <ul id="coluna-direita">
-                                <li>Aenean at orci id sem feugiat posuere.</li>
-                                <li>Sed posuere dolor et tellus elementum auctor.</li>
-
-                                <li>Etiam ultricies dui in est scelerisque id commodo felis dapibus.</li>
+                            <ul id="coluna-direita" class="produtos-direita conexao">
+                                
                             </ul>
                         </div>
                         <div class="clear">&nbsp;</div>
                     </div>
                 </fieldset>
-            
+            <div id="items"></div>
                 <fieldset>
                     <legend>Revendas</legend>
 					<%f.fields_for :campanha_vendedores do |campanha_vendedores_form|%>
@@ -115,12 +106,12 @@
 								           :url=>{:action=>"lista_vendedores"},:with=>"'estado_id='+value")
 							 	%>
 
-								<ul id="coluna-esquerda" class="connect lst-revendas">
+								<ul id="coluna-esquerda" class="revendas-esquerda conexao lst-revendas">
 								</ul>
 							</div>
 							<div class="connect fr">
 								<h3>Revendas participantes</h3>
-								<ul id="coluna-direita" class="connect">
+								<ul id="coluna-direita" class="revendas-direita conexao">
 								</ul>
 								<div id="janela"></div>
 							<div class="clear">&nbsp;</div>
@@ -128,7 +119,7 @@
 					
 				    <% end -%>
                     <br />
-                    <input class="ipt-check" type="checkbox" /> <label class="lbl-check">Todos revendedores</label>
+                    <input id="todas-revendas" onchange="javascript:todasRevendas();" class="ipt-check" type="checkbox" /> <label class="lbl-check">Todos revendedores</label>
                     <div class="clear">&nbsp;</div>
                 </fieldset>
             
@@ -136,125 +127,12 @@
                     <legend>Prêmios</legend>
 
                     <ul class="premios">
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Lorem ipsum dolor sit amet <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-                        </li>
-                    	<li>
-                        	<input type="checkbox" class="ipt-check" />
-                            <input type="text" class="ipt ipt-premio" />
-                            <label class="lbl-premio">Título do prêmio <span>(999 pontos)</span></label>
-
-                        </li>
+						<% Premio.all(:order => "premio").each do |p|%>
+						<li><input name="premio[]" onchange="javascript:if(this.checked){document.getElementById('quantidade<%=p%>').disabled=false;}else{document.getElementById('quantidade<%=p%>').disabled=true;};" id="premio<%=p%>" value="<%=p%>" type="checkbox" class="ipt-check">						
+						    <input type="text" class="ipt ipt-premio" disabled="disabled" id="quantidade<%=p%>" />
+						    <label class="lbl-premio"><%=p.premio%> <span>(<%=p.pontos%> pontos)</span></label>
+						</li>
+						<% end %>
                     </ul>
                 </fieldset>
             
@@ -274,61 +152,15 @@
                 <div class="botoes">
                     <button type="submit" class="button negative"><img src="images/icons/cancel.png" alt=""/> Limpar</button>
 
-                    <button type="submit" class="button positive"><img src="images/icons/tick.png" alt=""/> Salvar</button>
+<%= f.submit 'Salvar' %>
                 </div>
             </fieldset>
-        </form>
     </div>
-
-
-
-
-
-
 
 	
 
 
-	  <p>
-	    <%= f.label :titulo %><br />
-	    
-	  </p>
-	  <p>
-	    <%= f.label :data_inicio %><br />
-	    
-	  </p>
-	  <p>
-	    <%= f.label :data_termino %><br />
-	    
-	  </p>
-	  <fieldset>
-	 	<legend>Vendedores</legend>
-		    
-	  </fieldset>
-	  <fieldset>
-	 	<legend>Prêmios</legend>
-		    <%f.fields_for :campanha_premios do |campanha_premios_form|%>
-		      <%= render :partial => "campanha_premio", :locals => {:f => campanha_premios_form} %>
-		    <% end -%>
-	  </fieldset>
-	  <fieldset>
-	 	<legend>Produtos</legend>
-		    <%f.fields_for :campanha_produtos do |campanha_produtos_form|%>
-		      <%= render :partial => "campanha_produto", :locals => {:f => campanha_produtos_form} %>
-		    <% end -%>
-	  </fieldset>
-	  <p>
-	    <%= f.label :data_troca %><br />
-	    
-	  </p>
-	  <p>
-	    <%= f.label :regulamento %><br />
-
-	    <%= f.text_area :regulamento %>
-	  </p>
-	  <p>
-	    <%= f.submit 'Create' %>
-	  </p>
+	 
 
 	</div>
 	<br />

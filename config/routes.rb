@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :lance_unicos
+
   
   map.namespace :admin do |admin|
     admin.resources :campanha_agentes
@@ -7,10 +9,12 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :vendedores
     admin.resources :agentes
     admin.resources :vendedores_ranking
-    admin.resources :lance_unico
+    admin.resources :lance_unicos
+    admin.resources :produtos
+    admin.resources :premios
+    admin.resources :relatorio
   end
-
-  map.root :controller => "main"
+  map.root :controller=>"campanhas"
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

@@ -1,5 +1,11 @@
-<h1>Listing agentes</h1>
-
+<h1>Agentes</h1>
+<% form_for([:admin, @agente]) do |f| %>
+  <% if f.error_messages.nil?  %>
+	  <div class="error"><%=f.error_messages%></div>
+  <% end %>
+  <% if flash[:notice] %>
+	<div class="success"><%=flash[:notice]%></div>
+  <% end %>
 <table>
   <tr>
     <th>Nome</th>
@@ -8,13 +14,20 @@
 <% @agentes.each do |agente| %>
   <tr>
     <td><%=h agente.nome %></td>
-    <td><%= link_to 'Show', agente %></td>
-    <td><%= link_to 'Edit', edit_agente_path(agente) %></td>
-    <td><%= link_to 'Destroy', agente, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_admin_agente_path(agente) %></td>
+    <td><%= link_to 'Destroy',  [:admin, agente], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New agente', new_agente_path %>
+<p>
+   <%= f.label :nome %><br />
+   <%= f.text_field :nome %>
+ </p>
+ <p>
+   <%= f.submit 'Create' %>
+ </p>
+<% end%>
+<%= link_to 'New agente', new_admin_agente_path %>

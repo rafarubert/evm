@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091211131757) do
+ActiveRecord::Schema.define(:version => 20091211140401) do
 
   create_table "agentes", :force => true do |t|
     t.string   "nome"
@@ -95,6 +95,15 @@ ActiveRecord::Schema.define(:version => 20091211131757) do
   end
 
   create_table "lance_unico", :force => true do |t|
+    t.integer  "premios_id"
+    t.date     "data_inicio"
+    t.date     "data_termino"
+    t.integer  "quantidade"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lance_unicos", :force => true do |t|
     t.integer  "premios_id"
     t.date     "data_inicio"
     t.date     "data_termino"

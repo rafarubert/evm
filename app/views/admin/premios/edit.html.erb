@@ -1,0 +1,24 @@
+<h1>Editing premio</h1>
+
+<% form_for(@premio) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :premio %><br />
+    <%= f.text_field :premio %>
+  </p>
+  <p>
+    <%= f.label :pontos %><br />
+    <%= f.text_field :pontos %>
+  </p>
+  <p>
+    <%= f.label :ativo %><br />
+    <%= f.text_field :ativo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @premio %> |
+<%= link_to 'Back', premios_path %>

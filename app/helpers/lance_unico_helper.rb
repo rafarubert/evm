@@ -1,2 +1,0 @@
-module LanceUnicoHelper
-end

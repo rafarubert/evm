@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  premios: 
+  data_inicio: 2009-12-11
+  data_termino: 2009-12-11
+  quantidade: 1
+
+two:
+  premios: 
+  data_inicio: 2009-12-11
+  data_termino: 2009-12-11
+  quantidade: 1

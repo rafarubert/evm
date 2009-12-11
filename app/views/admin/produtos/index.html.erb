@@ -1,0 +1,43 @@
+<h1>Listing produtos</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Condigo</th>
+    <th>Grupo</th>
+  </tr>
+
+<% @produtos.each do |produto| %>
+  <tr>
+    <td><%=h produto.nome %></td>
+    <td><%=h produto.codigo %></td>
+
+    <td><%= link_to 'Edit', edit_admin_produto_path(produto) %></td>
+    <td><%= link_to 'Destroy', [:admin, produto], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate%>
+<br />
+
+
+<% form_for([:admin, @produto]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :codigo %><br />
+    <%= f.text_field :codigo %>
+  </p>
+  <p>
+    <%= f.label :grupo %><br />
+    <%= f.text_field :grupo %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+<%= link_to 'New produto', new_admin_produto_path %>

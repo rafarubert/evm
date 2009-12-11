@@ -1,0 +1,26 @@
+<h1>Listing lance_unicos</h1>
+
+<table>
+  <tr>
+    <th>Premios</th>
+    <th>Data inicio</th>
+    <th>Data termino</th>
+    <th>Quantidade</th>
+  </tr>
+
+<% @lance_unicos.each do |lance_unico| %>
+  <tr>
+    <td><%=h lance_unico.premios %></td>
+    <td><%=h lance_unico.data_inicio %></td>
+    <td><%=h lance_unico.data_termino %></td>
+    <td><%=h lance_unico.quantidade %></td>
+    <td><%= link_to 'Show', lance_unico %></td>
+    <td><%= link_to 'Edit', edit_lance_unico_path(lance_unico) %></td>
+    <td><%= link_to 'Destroy', lance_unico, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New lance_unico', new_lance_unico_path %>

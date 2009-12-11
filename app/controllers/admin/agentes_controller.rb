@@ -2,6 +2,8 @@ class Admin::AgentesController < ApplicationController
   layout "admin"
   def index
     @agentes = Agente.all
+    @agente = Agente.new
+
   end
 
   def show

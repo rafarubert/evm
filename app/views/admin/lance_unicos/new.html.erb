@@ -1,0 +1,26 @@
+<h1>New lance_unico</h1>
+
+<% form_for([:admin, @lances_unicos]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :premios %><br />
+    <%= f.text_field :premios %>
+  </p>
+  <p>
+    <%= f.label :data_inicio %><br />
+    <%= f.date_select :data_inicio %>
+  </p>
+  <p>
+    <%= f.label :data_termino %><br />
+    <%= f.date_select :data_termino %>
+  </p>
+  <p>
+    <%= f.label :quantidade %><br />
+    <%= f.text_field :quantidade %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+

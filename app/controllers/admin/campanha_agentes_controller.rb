@@ -45,7 +45,7 @@ class Admin::CampanhaAgentesController < ApplicationController
     respond_to do |format|
       if @campanha_agente.save
         flash[:notice] = 'CampanhaAgente was successfully created.'
-        format.html { redirect_to(@campanha_agente) }
+        format.html { redirect_to([:admin, @campanha_agente]) }
         format.xml  { render :xml => @campanha_agente, :status => :created, :location => @campanha_agente }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class Admin::CampanhaAgentesController < ApplicationController
     respond_to do |format|
       if @campanha_agente.update_attributes(params[:campanha_agente])
         flash[:notice] = 'CampanhaAgente was successfully updated.'
-        format.html { redirect_to(@campanha_agente) }
+        format.html { redirect_to([:admin, @campanha_agente]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,7 +78,7 @@ class Admin::CampanhaAgentesController < ApplicationController
     @campanha_agente.destroy
 
     respond_to do |format|
-      format.html { redirect_to(campanha_agentes_url) }
+      format.html { redirect_to(admin_campanha_agentes_url) }
       format.xml  { head :ok }
     end
   end  
