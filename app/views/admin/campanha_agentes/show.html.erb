@@ -1,0 +1,33 @@
+<p>
+  <b>Nome:</b>
+  <%=h @campanha_agente.nome %>
+</p>
+
+<p>
+  <b>Inicio:</b>
+  <%=h @campanha_agente.inicio %>
+</p>
+
+<p>
+  <b>Termino:</b>
+  <%=h @campanha_agente.termino %>
+</p>
+
+<p>
+  <b>Regulamento:</b>
+  <%=h @campanha_agente.regulamento %>
+</p>
+
+<p>
+  <b>Pontos venda:</b>
+  <%=h @campanha_agente.pontos_venda %>
+</p>
+
+<p>
+  <b>Pontos vendedor:</b>
+  <%=h @campanha_agente.pontos_vendedor %>
+</p>
+
+
+<%= link_to 'Edit', edit_campanha_agente_path(@campanha_agente) %> |
+<%= link_to 'Back', campanha_agentes_path %>

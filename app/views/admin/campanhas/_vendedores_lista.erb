@@ -1,6 +1,5 @@
-<% Vendedor.all(:conditions=>["estado_id=?", params[:estado_id]]).each_with_index do |vendedor, id| %>
-<li id="vendedor_<%=vendedor.id%>" onclick="javascript: dragVendedores(this.id, '<%=vendedor.id%>', '<%=vendedor.nome%>');">
-	<%=vendedor.nome%>
-</li>
+<% Distribuidor.all(:conditions=>["estado=?", params[:estado_id]]).each_with_index do |distribuidor, id| %>
+	<li id="vendedor_<%=distribuidor.id%>" onclick="javascript: dragVendedores(this.id, '<%=distribuidor.id%>', '<%=distribuidor.nome_fantasia%>');">
+		<%=distribuidor.nome_fantasia%>
+	</li>
 <% end%>
-

@@ -1,27 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :premios
-
-  map.resources :produtos
-
-  map.resources :campanha_produtos
-
-  map.resources :campanha_premios
-
-  map.resources :campanha_vendedores
-
-  map.resources :vendedores
-
-  map.resources :vendedors
-
-  map.resources :municipios
-
-  map.resources :estados
-
-
+  
   map.namespace :admin do |admin|
+    admin.resources :campanha_agentes
     admin.resources :campanhas
     admin.resources :campanha_relacao
-    map.resources :agentes
+    admin.resources :vendedores
+    admin.resources :agentes
+    admin.resources :vendedores_ranking
+    admin.resources :lance_unico
   end
 
   map.root :controller => "main"

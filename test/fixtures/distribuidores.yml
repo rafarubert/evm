@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome_fantasia: MyString
+  razao_social: MyString
+  cnpj: MyString
+  cgf: MyString
+  endereco: MyString
+  complemento: MyString
+  cep: MyString
+  bairro: MyString
+  municipio: 
+  municipio: MyString
+  estado: MyString
+  agente: 
+
+two:
+  nome_fantasia: MyString
+  razao_social: MyString
+  cnpj: MyString
+  cgf: MyString
+  endereco: MyString
+  complemento: MyString
+  cep: MyString
+  bairro: MyString
+  municipio: 
+  municipio: MyString
+  estado: MyString
+  agente: 

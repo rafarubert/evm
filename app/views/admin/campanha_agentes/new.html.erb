@@ -1,0 +1,35 @@
+<h1>New campanha_agente</h1>
+
+<% form_for([:admin, @campanha_agente]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :inicio %><br />
+    <%= f.date_select :inicio %>
+  </p>
+  <p>
+    <%= f.label :termino %><br />
+    <%= f.date_select :termino %>
+  </p>
+  <p>
+    <%= f.label :regulamento %><br />
+    <%= f.text_area :regulamento %>
+  </p>
+  <p>
+    <%= f.label :pontos_venda %><br />
+    <%= f.text_field :pontos_venda %>
+  </p>
+  <p>
+    <%= f.label :pontos_vendedor %><br />
+    <%= f.text_field :pontos_vendedor %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', admin_campanha_agentes_path %>

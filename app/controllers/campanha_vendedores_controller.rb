@@ -1,6 +1,4 @@
 class CampanhaVendedoresController < ApplicationController
-  # GET /campanha_vendedores
-  # GET /campanha_vendedores.xml
   def index
     @campanha_vendedores = CampanhaVendedor.all
 
@@ -10,8 +8,6 @@ class CampanhaVendedoresController < ApplicationController
     end
   end
 
-  # GET /campanha_vendedores/1
-  # GET /campanha_vendedores/1.xml
   def show
     @campanha_vendedor = CampanhaVendedor.find(params[:id])
 
@@ -21,8 +17,6 @@ class CampanhaVendedoresController < ApplicationController
     end
   end
 
-  # GET /campanha_vendedores/new
-  # GET /campanha_vendedores/new.xml
   def new
     @campanha_vendedor = CampanhaVendedor.new
 
@@ -32,13 +26,10 @@ class CampanhaVendedoresController < ApplicationController
     end
   end
 
-  # GET /campanha_vendedores/1/edit
   def edit
     @campanha_vendedor = CampanhaVendedor.find(params[:id])
   end
 
-  # POST /campanha_vendedores
-  # POST /campanha_vendedores.xml
   def create
     @campanha_vendedor = CampanhaVendedor.new(params[:campanha_vendedor])
 
@@ -54,8 +45,6 @@ class CampanhaVendedoresController < ApplicationController
     end
   end
 
-  # PUT /campanha_vendedores/1
-  # PUT /campanha_vendedores/1.xml
   def update
     @campanha_vendedor = CampanhaVendedor.find(params[:id])
 
@@ -71,8 +60,6 @@ class CampanhaVendedoresController < ApplicationController
     end
   end
 
-  # DELETE /campanha_vendedores/1
-  # DELETE /campanha_vendedores/1.xml
   def destroy
     @campanha_vendedor = CampanhaVendedor.find(params[:id])
     @campanha_vendedor.destroy

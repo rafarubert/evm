@@ -1,0 +1,2 @@
+module Admin::LanceUnicoHelper
+end

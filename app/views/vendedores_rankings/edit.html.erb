@@ -1,0 +1,24 @@
+<h1>Editing vendedores_ranking</h1>
+
+<% form_for(@vendedores_ranking) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :ativo %><br />
+    <%= f.text_field :ativo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @vendedores_ranking %> |
+<%= link_to 'Back', vendedores_rankings_path %>

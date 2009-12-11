@@ -1,0 +1,59 @@
+<h1>Listing campanha_agentes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Inicio</th>
+    <th>Termino</th>
+    <th>Regulamento</th>
+    <th>Pontos venda</th>
+    <th>Pontos vendedor</th>
+  </tr>
+
+<% @campanha_agentes.each do |campanha_agente| %>
+  <tr>
+    <td><%=h campanha_agente.nome %></td>
+    <td><%=h campanha_agente.inicio %></td>
+    <td><%=h campanha_agente.termino %></td>
+    <td><%=h campanha_agente.regulamento %></td>
+    <td><%=h campanha_agente.pontos_venda %></td>
+    <td><%=h campanha_agente.pontos_vendedor %></td>
+    <td><%= link_to 'Show', [:admin, campanha_agente] %></td>
+    <td><%= link_to 'Edit', edit_admin_campanha_agente_path(campanha_agente) %></td>
+    <td><%= link_to 'Destroy', [:admin, campanha_agente], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<% form_for([:admin, @campanha_agente]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :inicio %><br />
+    <%= f.date_select :inicio %>
+  </p>
+  <p>
+    <%= f.label :termino %><br />
+    <%= f.date_select :termino %>
+  </p>
+  <p>
+    <%= f.label :regulamento %><br />
+    <%= f.text_area :regulamento %>
+  </p>
+  <p>
+    <%= f.label :pontos_venda %><br />
+    <%= f.text_field :pontos_venda %>
+  </p>
+  <p>
+    <%= f.label :pontos_vendedor %><br />
+    <%= f.text_field :pontos_vendedor %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+<br />
+

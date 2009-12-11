@@ -1,0 +1,24 @@
+<h1>Listing vendedores_rankings</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Ativo</th>
+  </tr>
+
+<% @vendedores_rankings.each do |vendedores_ranking| %>
+  <tr>
+    <td><%=h vendedores_ranking.nome %></td>
+    <td><%=h vendedores_ranking.email %></td>
+    <td><%=h vendedores_ranking.ativo %></td>
+    <td><%= link_to 'Show', vendedores_ranking %></td>
+    <td><%= link_to 'Edit', edit_vendedores_ranking_path(vendedores_ranking) %></td>
+    <td><%= link_to 'Destroy', vendedores_ranking, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New vendedores_ranking', new_vendedores_ranking_path %>

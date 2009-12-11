@@ -1,0 +1,42 @@
+<h1>Listing distribuidores</h1>
+
+<table>
+  <tr>
+    <th>Nome fantasia</th>
+    <th>Razao social</th>
+    <th>Cnpj</th>
+    <th>Cgf</th>
+    <th>Endereco</th>
+    <th>Complemento</th>
+    <th>Cep</th>
+    <th>Bairro</th>
+    <th>Municipio</th>
+    <th>Municipio</th>
+    <th>Estado</th>
+    <th>Agente</th>
+  </tr>
+
+<% @distribuidores.each do |distribuidor| %>
+  <tr>
+    <td><%=h distribuidor.nome_fantasia %></td>
+    <td><%=h distribuidor.razao_social %></td>
+    <td><%=h distribuidor.cnpj %></td>
+    <td><%=h distribuidor.cgf %></td>
+    <td><%=h distribuidor.endereco %></td>
+    <td><%=h distribuidor.complemento %></td>
+    <td><%=h distribuidor.cep %></td>
+    <td><%=h distribuidor.bairro %></td>
+    <td><%=h distribuidor.municipio %></td>
+    <td><%=h distribuidor.municipio %></td>
+    <td><%=h distribuidor.estado %></td>
+    <td><%=h distribuidor.agente %></td>
+    <td><%= link_to 'Show', distribuidor %></td>
+    <td><%= link_to 'Edit', edit_distribuidor_path(distribuidor) %></td>
+    <td><%= link_to 'Destroy', distribuidor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New distribuidor', new_distribuidor_path %>

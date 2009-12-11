@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*
+	CLIENTE: Microsol
+	PROJETO: Eu Vendo Microsol
+	Agencia: Index Comunicacao Digital
+*/
+
+/* GERAL ********** */
+body          { background:#76BFF3 /*url(../images/fundo.png) repeat-x left top*/; color:#333; font:12px Arial, Helvetica, sans-serif; }
+/*.container_16 { background:#FFF url(../images/16_col.gif) repeat-y; }*/
+
+/* MISC ********** */
+.fl { float:left !important; }
+.fr { float:right !important; }
+
+/* TOPO ********** */
+.euvendo     { display:block; height:89px; margin:20px 10px; width:200px; }
+.euvendo a   { background:url(../images/logo.png) no-repeat; display:block; height:89px; overflow:hidden; text-indent:-666666px; width:200px;  }
+#topo        { height:129px; position:relative; }
+#topo span   { bottom:10px; color:#333; display:block; position:absolute; right:5px; text-align:right; width:300px; }
+#topo span a { color:#333; text-decoration:none; }
+#topo span a:hover { text-decoration:underline; }
+
+/* MENU ********** */
+.menu                      { border:1px solid #CCC; background:#FFF; padding:1px; }
+.menu h2                   { background:url(../images/bg_h_menu.png) repeat-x left center; color:#FFF; display:block; font-size:12px; padding:3px 5px; }
+.menu ul                   { margin:7px 0; }
+.menu ul a                 { color:#666; display:block; font-size:11px; margin:2px 0; padding:1px 5px; text-decoration:none; }
+.menu ul a:hover           { background:url(../images/bg_item_menu.png) repeat-x center center; border:1px solid #CCC; color:#000; padding:0px 4px; }
+.menu li hr                { border-color:#666; border-style:dotted none none; border-width:1px 0 0; display:block; margin:7px 7px 0; padding:3px }
+.menu span                 { display:block; padding:3px; text-indent:20px; }
+
+.menu .btn-campanhas span  { background:url(../images/icons/folder_picture.png) no-repeat left center; }
+.menu .btn-agentes span    { background:url(../images/icons/folder_user.png) no-repeat left center; }
+.menu .btn-vendedores span { background:url(../images/icons/group.png) no-repeat left center; }
+.menu .btn-ranking span    { background:url(../images/icons/group_gear.png) no-repeat left center; }
+.menu .btn-quiz span       { background:url(../images/icons/lightbulb.png) no-repeat left center; }
+.menu .btn-lanceunico span { background:url(../images/icons/money.png) no-repeat left center; }
+.menu .btn-relatorios span { background:url(../images/icons/chart_pie.png) no-repeat left center; }
+.menu .btn-opcoes span     { background:url(../images/icons/application_form.png) no-repeat left center; }
+.menu .btn-logout span     { background:url(../images/icons/cancel.png) no-repeat left center; }
+
+
+/* CONTEUDO ********** */
+#conteudo               { background:#FFF url(../images/fundo_corpo.png) repeat-x left top; border:1px solid #CCC; background:#FFF; margin-bottom:20px; padding:1px; }
+#conteudo h2            { background:transparent url(../images/bg_h_conteudo.png) repeat scroll center center; color:#FFF; font-size:12px; font-weight:bold; margin:0 0 5px; padding:3px 5px; text-transform:uppercase; }
+#conteudo .h-campanhas  { background:url(../images/icons/folder_picture.png) no-repeat left center; display:block; text-indent:20px; }
+#conteudo .h-campanhas  { background:url(../images/icons/folder_picture.png) no-repeat left center; }
+#conteudo .h-agentes    { background:url(../images/icons/folder_user.png) no-repeat left center; }
+#conteudo .h-vendedores { background:url(../images/icons/group.png) no-repeat left center; }
+#conteudo .h-ranking    { background:url(../images/icons/group_gear.png) no-repeat left center; }
+#conteudo .h-quiz       { background:url(../images/icons/lightbulb.png) no-repeat left center; }
+#conteudo .h-lanceunico { background:url(../images/icons/money.png) no-repeat left center; }
+#conteudo .h-relatorios { background:url(../images/icons/chart_pie.png) no-repeat left center; }
+#conteudo .h-opcoes     { background:url(../images/icons/application_form.png) no-repeat left center; }
+#conteudo .h-logout     { background:url(../images/icons/cancel.png) no-repeat left center; }
+
+.conteudo               { padding:10px; }
+
+/* ALERTA *********************************************** */
+/* DIVs de alerta em caso de erro, sucesso ou notificacao */
+.error,
+.notice,
+.success   { border:2px solid #DDDDDD; margin:13px 10px 5px; padding:0.8em; }
+.error     { -moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:#FBE3E4 none repeat scroll 0 0; border-color:#FBC2C4; color:#8A1F11; }
+.notice    { -moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:#FFF6BF none repeat scroll 0 0; border-color:#FFD324; color:#514721; }
+.success   { -moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:#E6EFC2 none repeat scroll 0 0; border-color:#C6D880; color:#264409; }
+.error a   { color:#8A1F11; }
+.notice a  { color:#514721; }
+.success a { color:#264409; }
+
+/* TABELA  DE LISTAGEM ********************************* */
+/* Tabela para listar usuarios, campanhas, revendas, etc */
+table.listagem                { border:1px solid #CCC; border-collapse:collapse; color:#000; font-size:11px; width:674px; }
+table.listagem thead          { background:url(../images/bg_h_lista.png) repeat-x left center;  }
+table.listagem thead th       { color:#FFF; font-weight:bold; padding:3px; text-align:left; }
+table.listagem tbody td       { padding:6px 3px; }
+table.listagem tbody tr       { border-bottom:1px solid #CCC; }
+table.listagem tbody tr:hover { background:#FFC; }
+table.listagem .data          { text-align:center; width:100px; }
+table.listagem .opcoes        { text-align:center; width:80px; }
+	
+	/* TABELA  DE LISTAGEM - PAGINACAO */
+	.pagina        { background-color:#f5f5f5; border:1px solid #dedede; border-top:1px solid #eee; border-left:1px solid #eee; color:#565656; cursor:pointer; display:block; float:left; font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size:10px; font-weight:bold; line-height:130%; margin: 0.7em 0.5em 0.7em 0; padding:5px 10px 5px 7px; text-decoration:none; }
+	.pagina img    { border:none; float:none; height:16px; margin:0 3px -3px 0 !important; padding:0; width:16px; }
+	.pagina:hover  { background-color:#dff4ff; border:1px solid #c2e1ef; color:#336699; }
+	.pagina:active { background-color:#6299c5; border:1px solid #6299c5; color:#fff; }
+
+/* BOTOES ************************************ */
+/* DIV que contem os botoes de salvar/cancelar */
+.botoes { margin-top:20px; }
+
+/* FORM */
+.conteudo .opcoes                    { width:333px; }
+.conteudo .filtro                    { margin-bottom:10px; }
+.conteudo .filtro button             { margin:0 !important; }
+.conteudo fieldset                   { border:1px solid #CCC; padding:10px; }
+.conteudo fieldset .zero             { color:#666; display:block; margin-bottom:10px; text-align:center; }
+.conteudo fieldset fieldset          { border-color:#F2F2F2; margin-bottom:10px; }
+.conteudo fieldset legend            { color:#06C; font-size:14px; font-weight:bold; padding:10px; }
+.conteudo fieldset fieldset legend   { font-size:12px; }
+.conteudo label                      { display:block; font-size:13px; font-weight:bold; margin-bottom:5px; }
+.conteudo label span                 { color:#CCC; font:italic 10px Georgia, "Times New Roman", Times, serif; }
+.conteudo label.lbl-check            { float:left; font-size:12px !important; font-weight:normal !important; padding:2px 0 0; }
+.conteudo label.lbl-checkopcoes      { width:290px !important; }
+.pontos                              { display:block; float:left; width:210px; }
+	/* FORM - INPUTS DE TEXTO */
+	.conteudo .ipt                       { background:#F2F2F2; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #333; font-size:12px; padding:5px; margin-bottom:15px; }
+	.conteudo .ipt-nomecamapanha,
+	.conteudo .ipt-produtosparticipantes { width:642px; }
+	.conteudo .ipt-pergunta              { width:622px; }
+	.conteudo .ipt-premio                { background:#F2F2F2 !important; border:1px solid #333 !important; display:block !important; float:left !important; margin:0 5px 0 0 !important; width:30px; }
+	.conteudo .ipt-pontuacao             { width:150px; }
+	.conteudo .ipt-filtro                { float:left; margin-right:8px; width:390px; }
+	.conteudo .ipt-nomevendedor,
+	.conteudo .ipt-enderecovendedor,
+	.conteudo .ipt-complementovendedor   { width:398px; }
+	.conteudo .ipt-emailvendedor,
+	.conteudo .ipt-cpfvendedor,
+	.conteudo .ipt-bairrovendedor,
+	.conteudo .ipt-senhavendedor,
+	.conteudo .ipt-numerovendedor,
+	.conteudo .ipt-cepvendedor,
+	.conteudo .ipt-cnpjvendedor          { width:190px; }
+	.conteudo .ipt-dddvendedor           { text-align:center; width:25px; }
+	.conteudo .ipt-fonevendedor          { width:150px; }
+	
+	/* FORM - INPUTS CHECKBOXES **************************** */
+	.conteudo .ipt-check      { display:block; float:left; }
+	
+	/* FORM - TEXT AREA */
+	.txa             { background:#F2F2F2; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #333; font-size:12px; height:150px; padding:5px; }
+	.txa-opcoes      { width:303px; }
+	.txa-respostas   { height:100px !important; width:622px; }
+	.txa-regulamento { background:#F2F2F2; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #333; font-size:12px; height:150px; padding:5px; width:622px; }
+	
+	/* FORM - SELECTS ********** */
+	/* DIV que contem os selects de data */
+	.datas    { display:block; float:left; width:210px; }
+	.slt,
+	.slt-data,
+	.slt-mes,
+	.slt-ano    { background:#F2F2F2; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #333; font-size:12px; padding:4px 2px; margin-bottom:15px; }
+	.slt-filtro { float:left; margin-right:5px; }
+	.slt-sexo,
+	.slt-estado,
+	.slt-cidade { width:196px; }
+	.slt-opcoes { margin-bottom:47px !important; width:313px; }
+	.slt-premio { width:652px; }
+	
+	/* FORM - VENDEDOR  */
+	.nomevendedor,
+	.enderecovendedor,
+	.complementovendedor { display:block; float:left; width:420px; }
+	.emailvendedor,
+	.cpfvendedor,
+	.sexovendedor,
+	.senhavendedor,
+	.fonevendedor,
+	.estadovendedor,
+	.cidadevendedor,
+	.bairrovendedor,
+	.numerovendedor,
+	.cepvendedor,
+	.cnpjvendedor   { display:block; float:left; width:210px; }
+
+/* FORM - PORTAL *********************************************************** */
+/* Controlador drag and drop dos produtos/revendas disponiveis/participantes */
+.portal     { width:632px; }
+.connect    { display:block; width:310px;}
+.connect h3 { color:#444; font-size:12px; font-weight:bold; margin-bottom:5px; }
+.connect ul { background:#F2F2F2; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #F2F2F2; color:#333; display:block; height:150px; overflow:auto; padding:5px 10px; width:288px; }
+.connect li { display:list-item; list-style:square inside; padding:3px 0; }
+.connect .lst-revendas { height:130px; }
+.connect .slt-revendas { width:310px;  }
+
+/* FORM - PREMIOS ******************************* */
+/* Listagem dos premios participantes na campanha */
+.premios li               { display:block; float:left; height:50px; margin:0 11px 10px 0; width:200px; }
+.premioslance li          { width:199px !important; }
+.premios .lbl-premio      { font-size:11px !important; display:inline !important; float:left !important; width:133px; }
+.premios .lbl-premio span { font-size:10px; display:block; }
+
+/* FORM - TABELA DE LISTAGEM DE PERGUNTAS */
+.perguntas                     { border-top:1px solid #CCC; margin-bottom:10px; width:634px; }
+.perguntas thead               { display:none; }
+.perguntas tbody tr            { border-bottom:1px solid #CCC; background:#E9E9E9; display:block; }
+.perguntas tbody tr:hover      { background:#DDD; }
+.perguntas tbody td            { color:#333; padding:4px 2px; }
+.perguntas tbody .td-perguntas { width:562px; }
+.perguntas tbody .td-opcoes    { text-align:center; width:64px; }

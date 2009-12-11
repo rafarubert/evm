@@ -1,0 +1,2 @@
+module VendedoresRankingsHelper
+end

@@ -1,0 +1,3 @@
+class CampanhaAgentesController < ApplicationController
+
+end

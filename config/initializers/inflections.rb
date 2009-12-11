@@ -1,8 +1,8 @@
 
 ActiveSupport::Inflector.inflections do |inflect|
-#   inflect.plural /^(ox)$/i, '\1en'
   inflect.irregular 'vendedor', 'vendedores'
   inflect.irregular 'relacao', 'relacoes'
+  inflect.irregular 'distribuidor', 'distribuidores'
   inflect.irregular 'campanha_vendedor', 'campanha_vendedores'
-#   inflect.uncountable %w( fish sheep )
+  inflect.irregular 'lance_unico', 'lance_unico'
 end

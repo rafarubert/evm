@@ -2,7 +2,7 @@ class Admin::CampanhasController < ApplicationController
   layout "admin"
   def index
     @campanha = Campanha.new
-    @campanhas = Campanha.all    
+    @campanhas = Campanha.paginate :page => params[:page], :per_page=>5, :order => 'created_at DESC'
     @campanha.campanha_vendedores.build
     @campanha.campanha_produtos.build
     @campanha.campanha_premios.build
@@ -20,7 +20,7 @@ class Admin::CampanhasController < ApplicationController
   
   def create
    @campanha = Campanha.new(params[:campanha])
-   render :text => params[:campanha]
+   
    respond_to do |format|
      if @campanha.save
        flash[:notice] = 'Campanha adicionada com sucesso.'

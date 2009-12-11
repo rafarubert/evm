@@ -1,0 +1,222 @@
+<h2><span class="h-campanhas">Vendedores</span></h2>
+	<% form_for([:admin, @vendedor]) do |f| %>
+	  <% if f.error_messages.nil?  %>
+    	  <div class="error"><%=f.error_messages%></div>
+	  <% end %>
+	  <% if flash[:notice] %>
+    	<div class="success"><%=flash[:notice]%></div>
+	  <% end %>
+                <div class="clear">&nbsp;</div>
+
+                
+                <div class="conteudo">
+                    <form class="filtro">
+                        <fieldset>
+                            <legend>Filtro</legend>
+                            
+                            <select class="slt slt-filtro">
+                            	<option>Nome</option>
+                            	<option>Data de nascimento</option>
+
+                            	<option>E-mail</option>
+                            	<option>CPF</option>
+                            </select>
+                            
+                            <input type="text" class="ipt ipt-filtro" />
+                            <button type="submit" class="button"><img src="images/icons/zoom.png" alt="Buscar"/> Buscar</button>
+                        </fieldset>
+                    </form>
+
+                    
+                    <table class="listagem">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th class="opcoes">Opções</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+	
+							<% @vendedores.each do |vendedor|%>
+                            <tr>
+                                <td><%=h vendedor.nome%></td>
+
+                                <td class="opcoes">
+									<%= link_to image_tag("../images/icons/report_edit.png", :title=>"Editar", :alt=>"Editar"), edit_admin_vendedor_path(vendedor) %>
+									<%= link_to image_tag("../images/icons/delete.png"), [:admin, vendedor], :confirm => 'Are you sure?', :method => :delete %>
+								</td>
+                            </tr>
+                            <% end%>
+
+                        </tbody>
+                    </table>
+<%= will_paginate%>
+                    <a href="#" class="pagina"><img src="images/icons/resultset_first.png" alt=""/> Primeira página</a>
+                    <a href="#" class="pagina"><img src="images/icons/resultset_previous.png" alt=""/> Página anterior</a>
+                    <div class="pagina"><img src="images/icons/page_white_stack.png" alt="Página" /> Página 150 de 3000</div>
+                    <a href="#" class="pagina"><img src="images/icons/resultset_next.png" alt=""/> Próxima página</a>
+
+                    <a href="#" class="pagina"><img src="images/icons/resultset_last.png" alt=""/> Última página</a>
+                    <div class="clear">&nbsp;</div>
+                    
+                    <form>
+                    	<fieldset>
+	                    	<legend>Ficha</legend>
+                            
+                            <input class="ipt-check" type="checkbox" /> <label class="lbl-check">Ativo</label>
+
+                            <div class="clear">&nbsp;</div>
+                            
+                            <fieldset>
+                            	<legend>Informações Pessoais</legend>
+                            	<div class="nomevendedor">
+                                	<label>Nome</label>
+                                    <%= f.text_field :nome %>
+                                </div>
+                                <div class="datas">
+
+                                    <label>Data de Nascimento</label>
+                                    <%= f.date_select :data_nasc%>
+
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                
+                                <div class="emailvendedor">
+                                	<label>E-mail</label>
+                                    <%= f.text_field :email %>
+                                </div>
+                                <div class="cpfvendedor">
+                                	<label>CPF</label>
+
+                                    <%= f.text_field :cpf %>
+                                </div>
+                                <div class="sexovendedor">
+                                	<label>Sexo</label>
+                                    <select class="slt slt-sexo">
+                                    	<option>Escolha</option>
+                                        <option>Feminino</option>
+
+                                        <option>Masculino</option>
+                                    </select>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Endereço / Contato</legend>
+                                <div class="estadovendedor">
+
+                                	<label>Estado</label>
+                                    <%= select "estado_id", "vendedores", Estado.all.collect {|e| [e.sigla,e.id]}, {:class=>"slt slt-estado"}%>
+                                </div>
+                                <div class="cidadevendedor">
+                                	<label>Cidade</label>
+                                    <%= select "cidade_id", "vendedores", Municipio.all.collect {|e| [e.municipio,e.id]}, {:class=>"slt slt-estado"}%>
+                                </div>
+                                <div class="bairrovendedor">
+
+                                	<label>Bairro</label>
+                                    <input type="text" class="ipt ipt-bairrovendedor" />
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                
+                                <div class="enderecovendedor">
+                                	<label>Endereço</label>
+                                    <input type="text" class="ipt ipt-enderecovendedor" />
+                                </div>
+
+                                <div class="numerovendedor">
+                                	<label>Número</label>
+                                    <input type="text" class="ipt ipt-numerovendedor" />
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                
+                                <div class="complementovendedor">
+                                	<label>Complemento</label>
+                                    <input type="text" class="ipt ipt-complementovendedor" />
+
+                                </div>
+                                <div class="cepvendedor">
+                                	<label>CEP</label>
+                                    <input type="text" class="ipt ipt-cepvendedor" />
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                
+                                <div class="fonevendedor">
+                                	<label>Telefone</label>
+
+                                    <input type="text" class="ipt ipt-dddvendedor" />
+                                    <input type="text" class="ipt ipt-fonevendedor" />
+                                </div>
+                                <div class="fonevendedor">
+                                	<label>Celular</label>
+                                    <input type="text" class="ipt ipt-dddvendedor" />
+                                    <input type="text" class="ipt ipt-fonevendedor" />
+                                </div>
+
+                                <div class="clear">&nbsp;</div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Senha</legend>
+                                <div class="senhavendedor">
+                                	<label>Senha</label>
+                                    <input type="password" class="ipt ipt-senhavendedor" />
+                                </div>
+
+                                <div class="senhavendedor">
+                                	<label>Confirmar senha</label>
+                                    <input type="password" class="ipt ipt-senhavendedor" />
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                            </fieldset>
+                        
+                            <fieldset>
+                                <legend>Local de Trabalho</legend>
+
+                                
+                                    <div class="estadovendedor">
+                                        <label>Estado</label>
+                                        <select class="slt slt-estado">
+                                            <option>Estado 01</option>
+                                            <option>Estado 02</option>
+                                            <option>Estado 03</option>
+                                            <option>Estado 04</option>
+
+                                            <option>Estado 05</option>
+                                        </select>
+                                    </div>
+                                    <div class="cidadevendedor">
+                                        <label>Cidade</label>
+                                        <select class="slt slt-cidade">
+                                            <option>Cidade 01</option>
+
+                                            <option>Cidade 02</option>
+                                            <option>Cidade 03</option>
+                                            <option>Cidade 04</option>
+                                            <option>Cidade 05</option>
+                                        </select>
+                                    </div>
+                                    <div class="cnpjvendedor">
+
+                                        <label>CNPJ <span>(digite o CNPJ e aperte o botão)</span></label>
+                                        <input type="text" class="ipt ipt-bairrovendedor" />
+                                    </div>
+                                    <div class="clear">&nbsp;</div>
+                                    
+                                    <button type="submit" class="button fr"><img src="images/icons/zoom.png" alt="Buscar"/> Buscar</button>
+                            </fieldset>
+                                                    
+                            <div class="clear">&nbsp;</div>
+
+                            <div class="botoes">
+                                <button type="submit" class="button negative"><img src="images/icons/cancel.png" alt=""/> Limpar</button>
+                                <button type="submit" class="button positive"><img src="images/icons/tick.png" alt=""/> Salvar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+<% end %>
