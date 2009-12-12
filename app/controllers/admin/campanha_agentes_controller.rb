@@ -1,7 +1,7 @@
 class Admin::CampanhaAgentesController < ApplicationController
   layout "admin"
   def index
-    @campanha_agentes = CampanhaAgente.all
+    @campanha_agentes = CampanhaAgente.paginate :page=>params[:page],:per_page=>"5"
     @campanha_agente = CampanhaAgente.new
 
     respond_to do |format|
@@ -10,8 +10,6 @@ class Admin::CampanhaAgentesController < ApplicationController
     end
   end
 
-  # GET /campanha_agentes/1
-  # GET /campanha_agentes/1.xml
   def show
     @campanha_agente = CampanhaAgente.find(params[:id])
 
@@ -21,8 +19,6 @@ class Admin::CampanhaAgentesController < ApplicationController
     end
   end
 
-  # GET /campanha_agentes/new
-  # GET /campanha_agentes/new.xml
   def new
     @campanha_agente = CampanhaAgente.new
 
@@ -32,13 +28,12 @@ class Admin::CampanhaAgentesController < ApplicationController
     end
   end
 
-  # GET /campanha_agentes/1/edit
   def edit
     @campanha_agente = CampanhaAgente.find(params[:id])
+    @campanha_agentes = CampanhaAgente.paginate :page=>params[:page],:per_page=>"5"
+    render :action=>"index"
   end
 
-  # POST /campanha_agentes
-  # POST /campanha_agentes.xml
   def create
     @campanha_agente = CampanhaAgente.new(params[:campanha_agente])
 
@@ -54,8 +49,6 @@ class Admin::CampanhaAgentesController < ApplicationController
     end
   end
 
-  # PUT /campanha_agentes/1
-  # PUT /campanha_agentes/1.xml
   def update
     @campanha_agente = CampanhaAgente.find(params[:id])
 
@@ -71,8 +64,6 @@ class Admin::CampanhaAgentesController < ApplicationController
     end
   end
 
-  # DELETE /campanha_agentes/1
-  # DELETE /campanha_agentes/1.xml
   def destroy
     @campanha_agente = CampanhaAgente.find(params[:id])
     @campanha_agente.destroy

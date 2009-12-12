@@ -46,11 +46,12 @@
         
         	<fieldset>
             	<legend>Ficha</legend>
-                <label>Título da campanha</label>
-                <div class="valida"><%= f.text_field :titulo, :class=>"ipt ipt-nomecamapanha" %></div>
-                <div class="clear">&nbsp;</div>
-                
+               
                 <fieldset>
+					 <label>Título da campanha</label>
+		                <div class="valida"><%= f.text_field :titulo, :class=>"ipt ipt-nomecamapanha" %></div>
+		                <div class="clear">&nbsp;</div>
+	
                 	<legend>Datas</legend>
 
                     <div class="datas">
@@ -77,7 +78,7 @@
                             <h3>Produtos Disponíveis</h3>
                             <ul id="cosluna-esquerda" class="produtos-esquerda conexao">
                                 <% Produto.all.each do |produto| %>
-								<li id="<%=produto.id%>"><%=produto.nome%></li>
+								<li onclick="javascript: dragVendedores(this.id, '<%=produto.id%>');" id="produto_<%=produto.id%>"><%=produto.nome%> <span id="item_<%=produto.id%>"></span></li>
 								<% end%>
                             </ul>
                         </div>
@@ -91,7 +92,7 @@
                         <div class="clear">&nbsp;</div>
                     </div>
                 </fieldset>
-            <div id="items"></div>
+            <div id="itens"></div>
                 <fieldset>
                     <legend>Revendas</legend>
 					<%f.fields_for :campanha_vendedores do |campanha_vendedores_form|%>

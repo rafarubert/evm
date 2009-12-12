@@ -79,5 +79,8 @@ class Admin::VendedoresController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
+  def select_cidade
+    render :partial=>"select_cidade"
+  end
+  
 end

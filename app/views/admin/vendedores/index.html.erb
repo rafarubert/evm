@@ -108,7 +108,13 @@
                                 <div class="estadovendedor">
 
                                 	<label>Estado</label>
-                                    <%= select "estado_id", "vendedores", Estado.all.collect {|e| [e.sigla,e.id]}, {:class=>"slt slt-estado"}%>
+                                    <%= select :estado,
+										       :estado_id,
+									           Estado.find(:all).collect {|t| [t.estado, t.sigla]},
+									           {:prompt=>"--Selecione o estado--", :class=>"slt-estado"},
+									           :onchange=>remote_function(:update=>"coluna-esquerda",
+									           :url=>{:action=>"select_cidade"},:with=>"'estado_id='+value")
+								 	%>
                                 </div>
                                 <div class="cidadevendedor">
                                 	<label>Cidade</label>

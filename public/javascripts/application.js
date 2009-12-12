@@ -10,6 +10,7 @@ $(document).ready(function(){
              },
        	   receive: function(event, ui) { $('#campanha_produtos_'+id_objeto+'').fadeOut('slow', function(){
                 		$('#campanha_produtos_'+id_objeto+'').remove();
+						$("#item_"+id_objeto).html("");
             		});
        		}
    });
@@ -21,12 +22,17 @@ $(document).ready(function(){
 	   receive: function(event, ui) { var html = 		"<div id=\"container-janela\" style=\"background: #CCC; left:250px; padding: 50px; position:absolute; top:400px; \">";
               html += "<input type=\"text\" id=\"valor-item\" />"; 
               html += '<input onclick="javascript: adicionar();" type="button" id="valor-item" value="adicionar"/>';
+
               html += "</div>";
               $("#janela").append(html); } 
    });
 });
 
-
+function adicionar(){
+    var valor = $("#valor-item").val();
+    $("#item_"+id_objeto).html(" ("+valor+" pontos)");
+    $("#container-janela").remove();
+}
 
 $(document).ready(function(){
    $(".revendas-esquerda").sortable({
@@ -49,33 +55,13 @@ $(document).ready(function(){
    });
 });
 
-function setarId(id){
-  item_atual = id; 
-  if (tipo == "out") {
-      $("#item_" + id).fadeOut('slow', function(){
-          $("#item_" + id).remove();
-      });
-  }
-  else {   
-      var html = "<div id=\"container-janela\">";
-      html += "<input type=\"text\" id=\"valor-item\" />"; 
-      html += '<input onclick="javascript: adicionar();" type="button" id="valor-item" value="\m/"/>';
-      html += "</div>";
-      $("#janela").append(html);
-  }
-}
 
-function dragVendedores(id, ID, revenda){
+
+function dragVendedores(id, ID){
   id_item = id; 
   id_objeto = ID; 
   nome_revenda = revenda; 
 
-}
-
-function adicionar(){
-    var valor = $("#valor-item").val();    
-    $("#items").append("<li id=\"item_"+ item_atual +"\">" + valor + "</li>");
-    $("#container-janela").remove();
 }
 
 function todasRevendas(){
